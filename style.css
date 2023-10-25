@@ -78,7 +78,7 @@ body{
     min-height:200px;
 }
 
-#ap {
+.projects {
     display: flex;
     justify-content: space-evenly;
 }
@@ -175,3 +175,8 @@ body{
     max-height: 46px;
 }
 
+.caphead{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+}
