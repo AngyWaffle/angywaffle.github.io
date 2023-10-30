@@ -16,8 +16,8 @@ body{
 }
 
 #fimg{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 48%, rgba(0,212,255,1) 100%);
+    background: rgb(255,0,0);
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(201,49,194,1) 50%, rgba(0,21,255,1) 100%);
 }
 
 .caption {
@@ -82,7 +82,7 @@ body{
 
 .button:before {
     content: '';
-    background: linear-gradient(45deg, #392F5A, #002bff, #00ffd5, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(201,49,194,1) 40%, rgba(0,21,255,1) 80%);
     position: absolute;
     top: -2px;
     left:-2px;
