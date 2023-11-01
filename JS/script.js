@@ -15,7 +15,7 @@ location.href = "oppgave_5/oppgave_5.html";
 };
 
 function download() {
-    const url = "calcbeta6(werror).py";
+    const url = "FirstScript/calcbeta6(werror).py";
     const a = document.createElement('a')
     a.href = url
     a.download = url.split('/').pop()
