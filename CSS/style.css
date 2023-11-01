@@ -64,7 +64,8 @@ body{
     border: 2px, #c8c8c8;
     padding:10px;
     text-align: center;
-    margin:25px
+    margin:25px;
+    width: 245px;
 }
 .button {
     width: 220px;
@@ -136,7 +137,12 @@ body{
     margin-left: 5px;
 }
 
-@media only screen and (max-width:768px){
+.project img{
+    width: 220px;
+    height: auto;
+}
+
+@media only screen and (max-width:991px){
 	/* Style the navigation menu */
 .topnav {
   overflow: hidden;

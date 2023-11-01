@@ -1,0 +1,69 @@
+.footer,.top,.main,.navBar,.header{border: 2px solid black;}
+
+.top{
+    font-size:50px;
+    padding: 0;
+    margin: 0;
+}
+
+.image{
+    max-width: 500px;
+    width: 100%;
+}
+
+.copyright{
+    padding: 20px;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.article{
+    margin:10px;
+}
+
+.smallhead{
+    font-size: 30px;
+    padding-bottom: 20px;
+    margin:10px;
+}
+
+.tittel{
+    font-size: 50px;
+    padding: 0;
+    margin:0;
+}
+
+.toptext{
+    margin: 10px;
+}
+
+
+
+@media only screen and (max-width:1000px) {
+    .TextsFooter{
+        margin:10px;
+        flex-wrap: wrap;
+    }
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+    .TextsFooter{
+        display: flex;
+        justify-content: space-between;
+        margin:10px;
+    }
+    .articles{
+        display: flex;
+    }
+    .header{
+        font-size: 50px;
+        padding: 0;
+        margin:0;
+        display: flex;
+        justify-content: space-between;
+    }
+}
