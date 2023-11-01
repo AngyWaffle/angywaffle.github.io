@@ -10,9 +10,13 @@ function burgerMenu() {
 
 
 //redirect button to page for oppgave5
-function oppgave5() {
-location.href = "oppgave_5/oppgave_5.html";
+function redirect(url) {
+location.href = url;
 };
+
+function angywaffle() {
+    location.href = "https://angywaffle.no";
+}
 
 function download() {
     const url = "FirstScript/calcbeta6(werror).py";
