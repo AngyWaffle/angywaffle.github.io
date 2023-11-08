@@ -6,6 +6,9 @@
     <title>Jacob's side</title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="JS/script.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -15,6 +18,7 @@
             <a href="#ap" class="links">Aktive prosjekter</a>
             <a href="#i" class="links">Innleveringer</a>
             <a href="#gp" class="links">Gamle prosjekter</a>
+            <a href="#fp" class="links">Fritids prosjekter</a>
         </div>
 		<a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
             <i class="fa fa-bars"></i>
@@ -30,63 +34,19 @@
 
     <div class="content" id="ap">
         <p class="caphead">Aktive prosjekter</p>
-        <div class="projects">
-        <div class="project">
-            <img src="" alt="Bilde av prosjektet sin forside">
-            <p class="nocursor">Kort beskrivelse av prosjektet</p>
-            <button class="button">Gå til prosjekt side</button>
+        <div class="projects" id="AktivePro">
         </div>
-        <div class="project">
-            <img src="" alt="Bilde av prosjektet sin forside">
-            <p class="nocursor">Kort beskrivelse av prosjektet</p>
-            <button class="button">Gå til prosjekt side</button>
-        </div>
-        <div class="project">
-            <img src="" alt="Bilde av prosjektet sin forside">
-            <p class="nocursor">Kort beskrivelse av prosjektet</p>
-            <button class="button">Gå til prosjekt side</button>
-        </div>
-        <div class="project">
-            <img src="" alt="Bilde av prosjektet sin forside">
-            <p class="nocursor">Kort beskrivelse av prosjektet</p>
-            <button class="button">Gå til prosjekt side</button>
-        </div>
-        <div class="project">
-            <img src="" alt="Bilde av prosjektet sin forside">
-            <p class="nocursor">Kort beskrivelse av prosjektet</p>
-            <button class="button">Gå til prosjekt side</button>
-        </div>
-        </div>
+    </div>    
+
+    <div class="parallax" id="spacer"></div>
 
         <div class="content" id="i">
             <p class="caphead">Innleveringer</p>
-            <div class="projects">
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
+            <div class="projects" id="Innleveringer">
         </div>
+        </div>
+
+        <div class="parallax" id="spacer"></div>
             
         <div class="content" id="gp">
             <p class="caphead">Gamle prosjekter</p>
@@ -112,19 +72,27 @@
                 <button class="button">Gå til prosjekt side</button>
             </div>
         </div>
+        </div>
+
+        <div class="parallax" id="spacer"></div>
 
         <div class="content" id="fp">
             <p class="caphead">Fritid prosjekter</p>
             <div class="projects">
             <div class="project">
                 <img src="Images/firstScript.png" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kalkulator som tar matte formler. Mitt første script.</p>
-                <button class="button" onclick="download()">Last ned .py fil</button>
+                <p class="nocursor">Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant.</p>
+                <button class="button" onclick='download("FirstScript/calcbeta6(werror).py")'>Last ned .py fil</button>
             </div>
             <div class="project">
                 <img src="Images/angywaffle.png" alt="Bilde av prosjektet sin forside">
                 <p class="nocursor">AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.</p>
-                <button class="button" onclick="angywaffle()">Gå til prosjekt</button>
+                <button class="button" onclick="angywaffle('angywaffle.no')">Gå til prosjekt</button>
+            </div>
+            <div class="project">
+                <img src="Images/calculator.png" alt="Bilde av prosjektet sin forside">
+                <p class="nocursor">Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet.</p>
+                <button class="button" onclick='download("Calculator/calcbeta7(werror).py")'>Last ned .py fil</button>
             </div>
             <div class="project">
                 <img src="" alt="Bilde av prosjektet sin forside">
@@ -136,15 +104,49 @@
                 <p class="nocursor">Kort beskrivelse av prosjektet</p>
                 <button class="button">Gå til prosjekt side</button>
             </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            </div>
+        </div>
+        </div>
 
+        <div class="parallax" id="spacer"></div>
 
-    </div>
-    </div>
+        <div class="footer content">
+            <p>Credits:</p>
+            <a href="https://www.flaticon.com/free-icons/calculator" title="calculator icons">Calculator icons created by Good Ware - Flaticon</a>
+        </div>
+    <script type="text/babel">
+            
+            const texttextarr = ["Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant."]
+            const buttontextarr = ["Last ned .py fil", "Gå til prosjekt", "Last ned .py fil"]
+            const imgsrcarr = ["Images/calculator.png", "Images/angywaffle.png", "Images/firstScript.png"]
+            const functionsarr = ['download("Calculator/calcbeta7(werror).py")', "angywaffle('angywaffle.no')", 'download("FirstScript/calcbeta6(werror).py")'] 
+            const divid = ["AktivePro", "Innleveringer"]
+            let i = 0
+            let Aktvie =[]
+            let Innleveringer = []
+            const count =[0,2]
+
+            for (let x = 0; x < texttextarr.length;){
+            var buttontext = buttontextarr[x];
+            var texttext = texttextarr[x];
+            var imgsrc = imgsrcarr[x];
+            var functions = functionsarr[x];
+            var divs = (<div class="project">
+            <img src={imgsrc} alt="Bilde av prosjektet sin forside"/>
+            <p class="nocursor">{texttext}</p>
+            <button class="button" onClick={functions}>{buttontext}</button>
+            </div>)
+            if(x<=1){
+                Aktvie.push(divs)
+            }else if(x=2){
+            Innleveringer.push(divs)
+            }
+            x++
+            }
+
+            const activepro = ReactDOM.createRoot(document.getElementById("AktivePro"));
+            const innlevering = ReactDOM.createRoot(document.getElementById("Innleveringer"));
+            activepro.render(Aktvie);
+            innlevering.render(Innleveringer)
+        </script>
 </body>
 </html>
