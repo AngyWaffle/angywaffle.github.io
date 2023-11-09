@@ -39,7 +39,6 @@
     </div>    
 
     <div class="parallax" id="spacer"></div>
-
         <div class="content" id="i">
             <p class="caphead">Innleveringer</p>
             <div class="projects" id="Innleveringer">
@@ -50,27 +49,7 @@
             
         <div class="content" id="gp">
             <p class="caphead">Gamle prosjekter</p>
-            <div class="projects">
-            <div class="project">
-                <img src="Images/project_img.png" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Oppgave 5 er en introduksjon til media querry. </p>
-                <button class="button" id="oppgave5" onclick="redirect('oppgave_5/oppgave_5.html')">Gå til prosjekt</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
+            <div class="projects" id="GamlePro">
         </div>
         </div>
 
@@ -78,32 +57,7 @@
 
         <div class="content" id="fp">
             <p class="caphead">Fritid prosjekter</p>
-            <div class="projects">
-            <div class="project">
-                <img src="Images/firstScript.png" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant.</p>
-                <button class="button" onclick='download("FirstScript/calcbeta6(werror).py")'>Last ned .py fil</button>
-            </div>
-            <div class="project">
-                <img src="Images/angywaffle.png" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.</p>
-                <button class="button" onclick="angywaffle('angywaffle.no')">Gå til prosjekt</button>
-            </div>
-            <div class="project">
-                <img src="Images/calculator.png" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet.</p>
-                <button class="button" onclick='download("Calculator/calcbeta7(werror).py")'>Last ned .py fil</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
-            <div class="project">
-                <img src="" alt="Bilde av prosjektet sin forside">
-                <p class="nocursor">Kort beskrivelse av prosjektet</p>
-                <button class="button">Gå til prosjekt side</button>
-            </div>
+            <div class="projects" id="FritidPro">
         </div>
         </div>
 
@@ -113,19 +67,17 @@
             <p>Credits:</p>
             <a href="https://www.flaticon.com/free-icons/calculator" title="calculator icons">Calculator icons created by Good Ware - Flaticon</a>
         </div>
-    <script type="text/babel">
-            
-            const texttextarr = ["Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant."]
-            const buttontextarr = ["Last ned .py fil", "Gå til prosjekt", "Last ned .py fil"]
-            const imgsrcarr = ["Images/calculator.png", "Images/angywaffle.png", "Images/firstScript.png"]
-            const functionsarr = ['download("Calculator/calcbeta7(werror).py")', "angywaffle('angywaffle.no')", 'download("FirstScript/calcbeta6(werror).py")'] 
-            const divid = ["AktivePro", "Innleveringer"]
-            let i = 0
+    <script type="text/babel">          
+            const texttextarr = ["Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant."]
+            const buttontextarr = [ "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Last ned .py fil"]
+            const imgsrcarr = ["Images/project_img.png", "Images/calculator.png", "Images/angywaffle.png", "Images/firstScript.png"]
+            const functionsarr = ["redirect('oppgave_5/oppgave_5.html')", 'download("Calculator/calcbeta7(werror).py")', "angywaffle('angywaffle.no')", 'download("FirstScript/calcbeta6(werror).py")'] 
             let Aktvie =[]
             let Innleveringer = []
-            const count =[0,2]
+            let Fritid = []
+            let Gamle = []
 
-            for (let x = 0; x < texttextarr.length;){
+            for (let x = 0; x < 4; x++){
             var buttontext = buttontextarr[x];
             var texttext = texttextarr[x];
             var imgsrc = imgsrcarr[x];
@@ -135,18 +87,25 @@
             <p class="nocursor">{texttext}</p>
             <button class="button" onClick={functions}>{buttontext}</button>
             </div>)
-            if(x<=1){
+            if(x<0){
                 Aktvie.push(divs)
-            }else if(x=2){
-            Innleveringer.push(divs)
+            }else if(x<0){
+                Innleveringer.push(divs)
+            }else if(x<=0){
+                Gamle.push(divs)
+            }else if(x<=3){
+                Fritid.push(divs)
             }
-            x++
             }
 
             const activepro = ReactDOM.createRoot(document.getElementById("AktivePro"));
             const innlevering = ReactDOM.createRoot(document.getElementById("Innleveringer"));
+            const gamlep = ReactDOM.createRoot(document.getElementById("GamlePro"));
+            const fritidp = ReactDOM.createRoot(document.getElementById("FritidPro"));
             activepro.render(Aktvie);
             innlevering.render(Innleveringer)
+            gamlep.render(Gamle);
+            fritidp.render(Fritid)
         </script>
 </body>
 </html>
