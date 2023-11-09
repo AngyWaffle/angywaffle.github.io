@@ -146,7 +146,7 @@ body{
     max-width: 220px;
 }
 
-#spacer{
+.spacer{
     background-color: #c8c8c8;
     height: 1px;
 }
