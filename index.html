@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="topnav">
-        <a class="imglink"></a>
+        <a class="imglink" href="#fimg"></a>
         <div id="myLinks">
             <a class="links" href="#ap">Aktive Prosjekter</a>
             <a class="links" href="#i">Innleveringer</a>
@@ -27,7 +27,7 @@
     </div>
 
     <div class="parallax" id="fimg">
-        <div class="caption">   
+        <div class="caption" id="cap">   
             <p class="header">Jacob Hellerud</p><br>
             <p class="subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam similique est, iste commodi vero inventore ea animi possimus accusamus quo dolorem aspernatur consequuntur asperiores quam voluptatum unde culpa deleniti explicabo!</p>
         </div>
@@ -69,16 +69,6 @@
         </div>
 
     <script type="text/babel">    
-            //Creates the nessecary arrays      
-            const texttextarr = ["Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser."]
-            const buttontextarr = ["Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt"]
-            const imgsrcarr = ["Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png"]
-            const functionsarr = [calc6, oppg5, calc7, angywaffle] 
-            let Aktive =[]
-            let Innleveringer = []
-            let Fritid = []
-            let Gamle = []
-
             //Function to push the div with the correct variables to the correct array
             for (let x = 0; x < 4; x++){
             var buttontext = buttontextarr[x];
