@@ -14,12 +14,12 @@
 </head>
 <body>
     <div class="topnav">
-        <a class="imglink"><!-- <img src="logo_white.png" alt="Logo, JH" class="logo"> --></a>
+        <a class="imglink"></a>
         <div id="myLinks">
-            <a class="links">Aktive Prosjekter</a>
-            <a class="links">Innleveringer</a>
-            <a class="links">Gamle Prosjekter</a>
-            <a class="links">Fritids Prosjekter</a>
+            <a class="links" href="#ap">Aktive Prosjekter</a>
+            <a class="links" href="#i">Innleveringer</a>
+            <a class="links" href="#gp">Gamle Prosjekter</a>
+            <a class="links" href="#fp">Fritids Prosjekter</a>
         </div>
 		<a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
             <i class="fa fa-bars"></i>
@@ -73,9 +73,7 @@
             const texttextarr = ["Kalkulator som tar matte formler. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser."]
             const buttontextarr = ["Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt"]
             const imgsrcarr = ["Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png"]
-            //const functionsarr = ['download("FirstScript/calcbeta6(werror).py)', "redirect('oppgave_5/oppgave_5.html')", 'download("Calculator/calcbeta7(werror).py")', "angywaffle('angywaffle.no')"] 
-            const topnavbuttonsarr = ["Aktive Prosjekter", "Innleveringer", "Gamle Prosjekter", "Fritidsprosjekter"]
-            const idsbuttonarr = ["c6", "o5", "c7", "aw"]
+            const functionsarr = [calc6, oppg5, calc7, angywaffle] 
             let Aktive =[]
             let Innleveringer = []
             let Fritid = []
@@ -86,12 +84,11 @@
             var buttontext = buttontextarr[x];
             var texttext = texttextarr[x];
             var imgsrc = imgsrcarr[x];
-            var idsbutton = idsbuttonarr[x]
-            //var functions = functionsarr[x];
+            var functions = functionsarr[x];
             var divs = (<div class="project">
             <img src={imgsrc} alt="Bilde av prosjektet sin forside"/>
             <p class="nocursor">{texttext}</p>
-            <button class="button" id={idsbutton}>{buttontext}</button>
+            <button class="button" onClick={functions}>{buttontext}</button>
             </div>)
             if(x<0){
                 Aktive.push(divs)
@@ -109,12 +106,10 @@
             const innlevering = ReactDOM.createRoot(document.getElementById("Innleveringer"));
             const gamlep = ReactDOM.createRoot(document.getElementById("GamlePro"));
             const fritidp = ReactDOM.createRoot(document.getElementById("FritidPro"));
-            const topnavbar = ReactDOM.createRoot(document.getElementById("myLinks"));
             activepro.render(Aktive);
             innlevering.render(Innleveringer)
             gamlep.render(Gamle);
             fritidp.render(Fritid)
         </script>
-        <script src="JS/button.js"></script>
 </body>
 </html>

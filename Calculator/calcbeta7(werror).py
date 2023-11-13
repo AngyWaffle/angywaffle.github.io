@@ -52,7 +52,6 @@ print("23. volum av prisme med sirklet grunnflate")
 print("24. volum av kule")
 print("25. brøk til prosent")
 print("26. Faktor")
-print("27. Overflateareal av menneske (ift matteboken)")
 
 while True:
     #Tar imot hva du vil gjøre
@@ -190,12 +189,7 @@ while True:
             num1 = input("tallet ditt: ")
             print(math.factorial(int(num1)))
 
-        elif choice in ('27'):
-            m = float(input("Vekt i kg: "))
-            h = float(input("Høyde i cm: "))
-            print(math.sqrt(m*h)/60)
-
-        elif choice > '27':
+        elif choice > '26':
             print("error")
     else:
         print('error')
