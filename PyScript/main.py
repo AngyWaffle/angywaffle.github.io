@@ -1,6 +1,10 @@
 import arrr
 from pyscript import document
 
+def printpage(x):
+    output_div = document.querySelector("#output")
+    output_div.innerText = x
+
 import math
 
 z = math.pi
@@ -27,133 +31,117 @@ def add3(x, y, z):
 def multiply3(x, y, z):
     return x * y * z
 
-while True:
-    #Tar imot hva du vil gjøre
-    choice = document.getElementById("calctype").value
-    if choice:
-        #Tar inputen imot og redirecter den til hvilket type regning du vil
-        #Tar å gir verdi til num1 og num2 så man kan regne det ut
-        if choice in ('1', '2', '3', '4'):
-            #Regner pluss
-            if choice == '1':
-                print( num1, "+", num2, "=", add(num1, num2))
+def calculate(self):
+    choice = float(document.getElementById("calctype").value)
 
-            #Regner minus
-            elif choice == '2':
-                print( num1, "-", num2, "=", subtract(num1, num2))
+    if choice < 14:
+        num1 = float(document.getElementById("num1").value)
+        num2 = float(document.getElementById("num2").value)
+        #Regner pluss
+        if choice == 1:
+            answer = add(num1, num2)
+            outputvar = "{0} + {0} = {0}"
+            printpage(outputvar.format(num1, num2, answer))
 
-            #regner gange
-            elif choice == '3':
-                print( num1, "*", num2, "=", multiply(num1, num2))
+        #Regner minus
+        elif choice == 2:
+            answer = subtract(num1, num2)
+            outputvar = "{0} + {0} = {0}"
+            printpage(outputvar.format(num1, num2, answer))
 
-            #Regner deling
-            elif choice == '4':
-                print( num1, "/", num2, "=", divide(num1, num2))
+        #regner gange
+        elif choice == 3:
+            answer = multiply(num1, num2)
+            outputvar = "{0} + {0} = {0}"
+            printpage(outputvar.format(num1, num2, answer))
 
-        elif choice in ('5'):
-            print(math.sqrt(add(multiply(num1, num1), multiply(num2, num2))))
+        #Regner deling
+        elif choice == 4:
+            answer = divide(num1, num2)
+            outputvar = "{0} + {0} = {0}"
+            printpage(outputvar.format(num1, num2, answer))
 
-        elif choice in ('6'):
-            num1 = float(input("skriv tall du vil ha kvadrat rot av: "))
-            print( num1, " kvadratrot = ", math.sqrt(num1))
+        elif choice == 5:
+            printpage(math.sqrt(add(multiply(num1, num1), multiply(num2, num2))))
+        
+        elif choice == 6:
+            answer = divide(multiply(num1, num2), 2)
+            outputvar = "Arealet av trekanten er {0}"
+            printpage(outputvar.format(answer))
 
-        elif choice in ('7'):
-            num1 = float(input("Skriv radius: "))
-            print( "En sirkel med radius ", num1, " har et diameter på ", add(num1, num1))
+        elif choice == 7:
+            answer = multiply(divide(num2, 100), num1)
+            outputvar = "{0} prosent av {0} er {0}"
+            printpage(outputvar.format(num1, num2, answer))
 
-        elif choice in ('8'):
-            num1 = float(input("Skriv diameter: "))
-            print("En sirkel med diameter", num1, "har en radius av", divide(num1, 2))
+        elif choice == 8:
+            printpage("omkretsen av firkanten er", add(add(num1, num2), add(num1, num2)))
 
-        elif choice in ('9'):
-            num1 = float(input("Skriv diameter av sirkelen: "))
-            print( "Omkrets av en sirkel med ", num1," diameter er", multiply(num1, z))
+        elif choice == 9:
+            printpage("Arealet av firkanten er", multiply(num1, num2))
 
-        elif choice in ('10'):
-            num1 = float(input("Skriv radius av sirkelen: "))
-            print( "Omkrets av en sirkekl med", num1, "radius er", multiply(multiply(num1, 2), z))
+        elif choice == 10:
+            printpage(math.sqrt(subtract(pow(num2, 2), pow(num1, 2))))
 
-        elif choice in ('11'):
-            num1 = float(input("Skriv in radius av sirkelen: "))
-            print( "Areal av en sirkel med", num1, "radius er", multiply(multiply(num1, num1), z))
+        elif choice == 11:
+            printpage(subtract(180, add(num1, num2)))
 
-        elif choice in ('12'):
-            num1 = float(input("Skriv in diameteret av sirkelen: "))
-            print("Areal av en sirkel med", num1, "diameter er", multiply(pow(divide(num1, 2), 2), z))
+        elif choice == 12:
+            printpage(multiply(num1, num2))
 
-        elif choice in ('13'):
-            num1 = float(input("Grunnlinje: "))
-            num2 = float(input("Høyde: "))
-            num3 = float(input("hypotenus: "))
-            print("Omkretsen av trekanten er", add3(num1, num2, num3))
+        elif choice == 13:
+            printpage(multiply(divide(num1, num2), 100))
 
-        elif choice in ('14'):
-            num1 = float(input("høyde: "))
-            num2 = float(input("lengde: "))
-            print("arealet av trekanten er", divide(multiply(num1, num2), 2))
+    elif 13<choice<23:
 
-        elif choice in ('15'):
-            num1 = float(input("tallet du vil ha prosent av: "))
-            num2 = float(input("Prosent uten % tegnet: "))
-            print(num2, "prosent av", num1, "er", multiply(divide(num2, 100), num1))
+        num1 = document.getElementById("calctype").value
 
-        elif choice in ('16'):
-            num1 = float(input("Langside: "))
-            num2 = float(input("kortside: "))
-            print("omkretsen av firkanten er", add(add(num1, num2), add(num1, num2)))
+        if choice == 14:
+            printpage( num1, " kvadratrot = ", math.sqrt(num1))
 
-        elif choice in ('17'):
-            num1 = float(input("Langside: "))
-            num2 = float(input("Kortside: "))
-            print("Arealet av firkanten er", multiply(num1, num2))
+        elif choice == 15:
+            printpage( "En sirkel med radius ", num1, " har et diameter på ", add(num1, num1))
 
-        elif choice in ('18'):
-            num1 = float(input("Grunnlinje/høyde (den du har): "))
-            num2 = float(input("Hypotenus: "))
-            print(math.sqrt(subtract(pow(num2, 2), pow(num1, 2))))
+        elif choice == 16:
+            printpage("En sirkel med diameter", num1, "har en radius av", divide(num1, 2))
 
-        elif choice in ('19'):
-            num1 = float(input("vinkel 1: "))
-            num2 = float(input("vinkel 2: "))
-            print(subtract(180, add(num1, num2)))
+        elif choice == 17:
+            printpage( "Omkrets av en sirkel med ", num1," diameter er", multiply(num1, z))
 
-        elif choice in ('20'):
-            num1 = float(input("Vinkel 1: "))
-            num2 = float(input("Vinkel 2: "))
-            num3 = float(input("Vinkel 3: "))
-            print(subtract(360, add3(num1, num2, num3)))
+        elif choice == 18:
+            printpage( "Omkrets av en sirkekl med", num1, "radius er", multiply(multiply(num1, 2), z))
 
-        elif choice in ('21'):
-            num1 = float(input("Side 1: "))
-            num2 = float(input("Side 2: "))
-            num3 = float(input("Side 3: "))
-            print(multiply3(num1, num2, num3))
+        elif choice == 19:
+            printpage( "Areal av en sirkel med", num1, "radius er", multiply(multiply(num1, num1), z))
 
-        elif choice in ('22'):
-            num1 = float(input("Side 1: "))
-            num2 = float(input("Side 2: "))
-            num3 = float(input("Side 3: "))
-            print(multiply(divide(multiply(num1, num2), 2), num3))
+        elif choice == 20:
+            printpage("Areal av en sirkel med", num1, "diameter er", multiply(pow(divide(num1, 2), 2), z))
 
-        elif choice in ('23'):
-            num1 = float(input("diameter: "))
-            num2 = float(input("høyde: "))
-            print(multiply(num1, num2))
+        elif choice == 21:
+            printpage(pow(num1, 3))
 
-        elif choice in ('24'):
-            num1 = float(input("Radius: "))
-            print(pow(num1, 3))
+        elif choice == 22:
+            printpage(math.factorial(int(num1)))
 
-        elif choice in ('25'):
-            num1 = float(input("øverste tall: "))
-            num2 = float(input("Nederste tall: "))
-            print(multiply(divide(num1, num2), 100))
+    elif choice>22:
+        num1 = float(document.getElementById("num1").value)
+        num2 = float(document.getElementById("num2").value)
+        num3 = float(document.getElementById("num3").value)
 
-        elif choice in ('26'):
-            num1 = input("tallet ditt: ")
-            print(math.factorial(int(num1)))
+        if choice == 23:
+            printpage("Omkretsen av trekanten er", add3(num1, num2, num3))
 
-        elif choice > '26':
-            print("error")
-    else:
-        print('error')
+        elif choice == 24:
+            printpage(subtract(360, add3(num1, num2, num3)))
+
+        elif choice == 25:
+            printpage(multiply3(num1, num2, num3))
+
+        elif choice == 26:
+            printpage(multiply(divide(multiply(num1, num2), 2), num3))
+
+def translate_english(event):
+    input_text = document.querySelector("#english")
+    english = input_text.value
+    output_div = document.querySelector("#output")
+    output_div.innerText = arrr.translate(english)

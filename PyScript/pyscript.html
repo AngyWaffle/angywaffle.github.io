@@ -8,8 +8,12 @@
     <title>PyScript Learn</title>
 </head>
 <body>
-    <input type="text" id="calctype">
+    <input type="text" id="calctype" placeholder="Calc type..">
+    <input type="text" id="num1" placeholder="Num 1">
+    <input type="text" id="num2" placeholder="Num 2">
+    <input type="text" id="num3" placeholder="Num 3">
     <button py-click="calculate">Click me!</button>
-    
+    <div id="output"></div>
+    <script type="py" src="main.py" config="pyscript.json"></script>
 </body>
 </html>
