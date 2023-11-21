@@ -9,6 +9,8 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="Images/logo_white.png" type="image/icon type">
 </head>
@@ -29,7 +31,7 @@
     <div class="parallax" id="fimg">
         <div class="caption" id="cap">   
             <p class="header">Jacob Hellerud</p><br>
-            <p class="subtext">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam similique est, iste commodi vero inventore ea animi possimus accusamus quo dolorem aspernatur consequuntur asperiores quam voluptatum unde culpa deleniti explicabo!</p>
+            <p class="subtext">Dette er min prosjektside hvor jeg har en koleksjon av alle mine kodeprosjekter og skoleinnleveringer og oppgaver relatert til programering.</p>
         </div>
     </div>
 
@@ -97,7 +99,7 @@
             const gamlep = ReactDOM.createRoot(document.getElementById("GamlePro"));
             const fritidp = ReactDOM.createRoot(document.getElementById("FritidPro"));
             activepro.render(Aktive);
-            innlevering.render(Innleveringer)
+            innlevering.render(Innleveringer);
             gamlep.render(Gamle);
             fritidp.render(Fritid)
         </script>
