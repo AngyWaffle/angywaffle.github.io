@@ -40,25 +40,25 @@ def calculate(self):
         #Regner pluss
         if choice == 1:
             answer = add(num1, num2)
-            outputvar = "{0} + {0} = {0}"
+            outputvar = "{0} + {1} = {2}"
             printpage(outputvar.format(num1, num2, answer))
 
         #Regner minus
         elif choice == 2:
             answer = subtract(num1, num2)
-            outputvar = "{0} + {0} = {0}"
+            outputvar = "{0} - {1} = {2}"
             printpage(outputvar.format(num1, num2, answer))
 
         #regner gange
         elif choice == 3:
             answer = multiply(num1, num2)
-            outputvar = "{0} + {0} = {0}"
+            outputvar = "{0} * {1} = {2}"
             printpage(outputvar.format(num1, num2, answer))
 
         #Regner deling
         elif choice == 4:
             answer = divide(num1, num2)
-            outputvar = "{0} + {0} = {0}"
+            outputvar = "{0} / {1} = {2}"
             printpage(outputvar.format(num1, num2, answer))
 
         elif choice == 5:
@@ -71,57 +71,82 @@ def calculate(self):
 
         elif choice == 7:
             answer = multiply(divide(num2, 100), num1)
-            outputvar = "{0} prosent av {0} er {0}"
+            outputvar = "{0} prosent av {1} er {2}"
             printpage(outputvar.format(num1, num2, answer))
 
         elif choice == 8:
-            printpage("omkretsen av firkanten er", add(add(num1, num2), add(num1, num2)))
+            answer = add(add(num1, num2), add(num1, num2))
+            outputvar = "omkretsen av firkanten er {0}"
+            printpage(outputvar.format(answer))
 
         elif choice == 9:
-            printpage("Arealet av firkanten er", multiply(num1, num2))
+            answer = multiply(num1, num2)
+            outputvar = "Arealet av firkanten er {0}"
+            printpage(outputvar.format(answer))
 
         elif choice == 10:
-            printpage(math.sqrt(subtract(pow(num2, 2), pow(num1, 2))))
+            answer = math.sqrt(subtract(pow(num2, 2), pow(num1, 2)))
+            printpage(answer)
 
         elif choice == 11:
-            printpage(subtract(180, add(num1, num2)))
+            answer = subtract(180, add(num1, num2))
+            printpage(answer)
 
         elif choice == 12:
-            printpage(multiply(num1, num2))
+            answer = multiply(num1, num2)
+            printpage(answer)
 
         elif choice == 13:
-            printpage(multiply(divide(num1, num2), 100))
+            answer = multiply(divide(num1, num2), 100)
+            printpage(answer)
 
     elif 13<choice<23:
 
-        num1 = document.getElementById("calctype").value
+        num1 = float(document.getElementById("num1").value)
 
         if choice == 14:
-            printpage( num1, " kvadratrot = ", math.sqrt(num1))
+            answer = math.sqrt(num1)
+            outputvar = "{0} kvadratrot = {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 15:
-            printpage( "En sirkel med radius ", num1, " har et diameter på ", add(num1, num1))
+            answer = add(num1, num1)
+            outputvar = "En sirkel med radius {0} har et diameter på {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 16:
-            printpage("En sirkel med diameter", num1, "har en radius av", divide(num1, 2))
+            answer = divide(num1, 2)
+            outputvar = "En sirkel med diameter {0} har en radius på {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 17:
-            printpage( "Omkrets av en sirkel med ", num1," diameter er", multiply(num1, z))
+            answer = multiply(num1, z)
+            outputvar = "Omkrets av en sirkel med {0} diameter er {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 18:
-            printpage( "Omkrets av en sirkekl med", num1, "radius er", multiply(multiply(num1, 2), z))
+            answer = multiply(multiply(num1, 2), z)
+            outputvar = "Omkrets av en sirkekl med {0} radius er {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 19:
+            answer = multiply(multiply(num1, 2), z)
+            outputvar = "Omkrets av en sirkekl med {0} radius er {1}"
+            printpage(outputvar.format(num1, answer))
             printpage( "Areal av en sirkel med", num1, "radius er", multiply(multiply(num1, num1), z))
 
         elif choice == 20:
-            printpage("Areal av en sirkel med", num1, "diameter er", multiply(pow(divide(num1, 2), 2), z))
+            answer = multiply(pow(divide(num1, 2), 2), z)
+            outputvar = "Areal av en sirkel med {0} diameter er {1}"
+            printpage(outputvar.format(num1, answer))
 
         elif choice == 21:
-            printpage(pow(num1, 3))
+            answer = pow(num1, 3)
+            printpage(answer)
 
         elif choice == 22:
-            printpage(math.factorial(int(num1)))
+            answer = math.factorial(int(num1))
+            printpage(answer)
 
     elif choice>22:
         num1 = float(document.getElementById("num1").value)
@@ -129,19 +154,18 @@ def calculate(self):
         num3 = float(document.getElementById("num3").value)
 
         if choice == 23:
-            printpage("Omkretsen av trekanten er", add3(num1, num2, num3))
+            answer = add3(num1, num2, num3)
+            outputvar = "Omkretsen av trekanten er {0}"
+            printpage(outputvar.format(answer))
 
         elif choice == 24:
-            printpage(subtract(360, add3(num1, num2, num3)))
+            answer = subtract(360, add3(num1, num2, num3))
+            printpage(answer)
 
         elif choice == 25:
-            printpage(multiply3(num1, num2, num3))
+            answer = multiply3(num1, num2, num3)
+            printpage(answer)
 
         elif choice == 26:
-            printpage(multiply(divide(multiply(num1, num2), 2), num3))
-
-def translate_english(event):
-    input_text = document.querySelector("#english")
-    english = input_text.value
-    output_div = document.querySelector("#output")
-    output_div.innerText = arrr.translate(english)
+            answer = multiply(divide(multiply(num1, num2), 2), num3)
+            printpage(answer)
