@@ -8,11 +8,6 @@ function burgerMenu() {
         x.style.display = "block";
     }
 }
-
-//redirect button to local page
-function redirect(url) {
-    location.href = url;
-    };
     
 function oppg5() {
     location.href = "oppgave_5/oppgave_5.html"
@@ -20,38 +15,34 @@ function oppg5() {
 
 //external links need seperate functions
 function angywaffle() {
-    location.href = "https://angywaffle.no";
+    location.href = "https://angywaffle.no/tempstore";
 }
 
 //download function
 function calc7() {
-    url = "Calculator/calcbeta7(werror).py"
-    const a = document.createElement('a')
-    a.href = url
-    a.download = url.split('/').pop()
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
+    location.href = "Calculator/calcbeta7(werror).py" 
 }
 function calc6() {
-    url = "FirstScript/calcbeta1.py"
-    const a = document.createElement('a')
-    a.href = url
-    a.download = url.split('/').pop()
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
+    location.href = "FirstScript/calcbeta1.py"
 }
 
 function webcalc() {
     location.href="PyScript/pyscript.html"
 }
 
+function bilde() {
+    location.href = "https://www.flickr.com/photos/devdsp/6999839463"
+}
+
+function ccpage() {
+    location.href = "bildeoppgave/index.html"
+}
+
 //Creates the nessecary arrays      
-const texttextarr = ["Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres."]
-const buttontextarr = ["Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Gå til prosjekt"]
-const imgsrcarr = ["Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png", ""]
-const functionsarr = [calc6, oppg5, calc7, angywaffle, webcalc] 
+const texttextarr = ["Bildeoppgave. Denne oppgaven er om CC lisenser.", "Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres."]
+const buttontextarr = ["Gå til oppgave", "Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Gå til prosjekt"]
+const imgsrcarr = ["", "Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png", ""]
+const functionsarr = [ccpage, calc6, oppg5, calc7, angywaffle, webcalc] 
 
 let Aktive =[]
 let Innleveringer = []

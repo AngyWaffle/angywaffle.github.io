@@ -1,0 +1,254 @@
+body, html {
+    height: 75%;
+}
+
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+  
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fimg{
+    background: rgb(255,0,0);
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(201,49,194,1) 50%, rgba(0,21,255,1) 100%);
+    height: 100%;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    top: 15%; 
+}
+
+.caption p.header {
+    color: #fff;
+    padding: 18px 18px 0px;
+    font-size: 40px;
+    letter-spacing: 10px;
+    cursor: default;
+}
+
+.caption p.subtext {
+    color: #fff;
+    padding: 0px 18px 18px;
+    font-size: 25px;
+    cursor: default;
+    max-width: 700px;
+    margin: auto;
+}
+
+.content {
+    background-color: #ddd;
+    padding: 10px;
+    overflow:hidden;
+    min-height:200px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project{
+    border-radius: 25px;
+    background-color: #c8c8c8;
+    border: 2px, #c8c8c8;
+    padding:10px;
+    text-align: center;
+    margin:25px;
+    width: 450px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.39);
+}
+.button {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.button:before {
+    content: '';
+    background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(201,49,194,1) 40%, rgba(0,21,255,1) 80%);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);    
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.button:active {
+    color: #000
+}
+
+.button:active:after {
+    background: transparent;
+}
+
+.button:hover:before {
+    opacity: 1;
+}
+
+.button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button:hover {
+  background-color: white;
+  cursor:cursor;
+}
+
+.nocursor{
+    cursor:default;
+}
+
+.caphead{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.project img{
+    height: 200px;
+    width: auto;
+    max-width: 400px;
+}
+
+.spacer{
+    background-color: #c8c8c8;
+    height: 1px;
+}
+
+@media only screen and (max-width:991px){
+	/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #141414;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #141414;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ddd;
+  color: white;
+}
+	
+.topnav .imglink{
+    content: url("../Images/logo_white.png");
+    padding-top: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+    width: auto;
+    max-height: 44px;
+} 
+
+}
+@media only screen and (min-width:992px){
+.topnav .imglink{
+    content: url("../Images/logo_white.png");
+    padding-top: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: auto;
+    max-height: 46px;
+}
+
+.topnav .imglink:hover{
+    background-color: #ddd;
+    color: black;
+    cursor:pointer;
+    content: url("../Images/logo.png");
+    padding-top: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: auto;
+    max-height: 46px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #141414;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 500;
+}
+
+.topnav .links {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav .links:hover {
+    background-color: #ddd;
+    color: #141414;
+    cursor:pointer;
+}
+
+#myLinks{
+    display: flex;
+}
+	
+	.icon{
+		display: none;
+	}
+}
