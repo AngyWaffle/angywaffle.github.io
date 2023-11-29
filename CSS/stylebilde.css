@@ -151,6 +151,14 @@ body{
     height: 1px;
 }
 
+.project a:visited{
+    color: blue;
+}
+
+.project a:link{
+    color: blue;
+}
+
 @media only screen and (max-width:991px){
 	/* Style the navigation menu */
 .topnav {

@@ -10,7 +10,7 @@ function burgerMenu() {
 }
     
 function oppg5() {
-    location.href = "oppgave_5/oppgave_5.html"
+    location.href = "oppgave_5/index.html"
 }
 
 //external links need seperate functions
@@ -27,11 +27,27 @@ function calc6() {
 }
 
 function webcalc() {
-    location.href="PyScript/pyscript.html"
+    location.href="PyScript/index.html"
 }
 
-function bilde() {
+function bilde1() {
     location.href = "https://www.flickr.com/photos/devdsp/6999839463"
+}
+
+function bilde2() {
+    location.href = "https://commons.wikimedia.org/wiki/File:World_topic_image_Satellite_image.jpg"
+}
+
+function bilde3() {
+    location.href = "https://www.flickr.com/photos/vintage_illustration/45438980885"
+}
+
+function bilde4() {
+    location.href = "https://commons.wikimedia.org/wiki/File:Webb%27s_New_View_of_the_Pillars_of_Creation_%282022%29_%28weic2216e%29.jpeg"
+}
+
+function bilde5() {
+    location.href = "https://www.flickr.com/photos/gsfc/8804537584"
 }
 
 function ccpage() {
@@ -48,5 +64,4 @@ let Aktive =[]
 let Innleveringer = []
 let Fritid = []
 let Gamle = []
-
     
