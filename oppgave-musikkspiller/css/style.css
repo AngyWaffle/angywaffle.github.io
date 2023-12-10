@@ -1,0 +1,253 @@
+body, html{
+    height: 100%;
+}
+
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    background-color: #141414;
+    padding: 10px;
+    overflow:hidden;
+}
+
+.topnav{
+    text-transform: uppercase;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#fimg{
+    background-image: url("../images/Karpe_Diem.png");
+    min-height: 90%;
+    top:0;
+}
+
+.textel{
+    color:#ddd;
+}
+
+.textel strong{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.textel p{
+    font-size: 25px;
+}
+
+.artimg{
+    max-width: 100%;
+    max-height: auto;
+}
+
+.imgart a:link, a:visited, a:active{
+    color:#ddd;
+}
+
+.white{
+    color:#ddd
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+    top: 25%; 
+}
+
+.caption p.header {
+    color: #fff;
+    padding: 18px 18px 0px;
+    font-size: 100px;
+    letter-spacing: 10px;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+#art2{
+    margin-top: 2em
+}
+
+#center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    position: relative;
+    padding: 16px 30px;
+    font-size: 1.5rem;
+    color: aqua;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    text-shadow: 0 0 15px aqua;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    transition: 0.25s;
+    z-index: 1;
+}
+
+.button:hover {
+    color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0px aqua;
+    cursor:pointer;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: aqua;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.25s;
+}
+
+.button:hover::before {
+    transform: scale(1);
+    box-shadow: 0 0 10px aqua,
+    0 0 30px aqua,
+    0 0 60px aqua;
+}
+
+.marg{
+    margin-top: 5%;
+}
+
+@media only screen and (max-width:991px){
+
+.content, .textel{
+    text-align: center;
+    margin: auto;
+} 
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: violet;
+    position: relative;
+    z-index: 500;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a:hover{
+    cursor: pointer;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background: violet;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #ddd;
+    color: white;
+}
+    
+.topnav .imglink{
+    content: url("../images/1200px-KARPE_-_Logo.svg.png");
+    padding-top: 2px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 2px;
+    width: auto;
+    max-height: 44px;
+} 
+
+
+}
+@media only screen and (min-width:992px){
+
+.textel{
+    max-width: 60%;
+}
+
+.padding{
+    padding: 10px
+}    
+
+.art{
+    display: flex;
+}
+
+.topnav .imglink{
+    content: url("../images/1200px-KARPE_-_Logo.svg.png");
+    width: auto;
+    max-height: 46px;
+}
+
+.topnav {
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: -webkit- sticky;
+    position: fixed;
+    background-color: violet;
+    z-index: 500;
+    align-self: flex-start;
+}
+
+.topnav .links {
+    max-height: 26px;
+    font-size: 20px;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav .links:hover {
+    background-color: white;
+    color: #141414;
+    cursor:pointer;
+}
+
+/* .topnav:hover{
+    background-color: violet;
+} */
+
+#myLinks{
+    display: flex;
+}
+	
+.icon{
+    display: none;
+}
+}

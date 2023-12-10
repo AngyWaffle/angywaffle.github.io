@@ -20,14 +20,14 @@ function angywaffle() {
 
 //download function
 function calc7() {
-    location.href = "Calculator/calcbeta7(werror).py" 
+    location.href = "calculator/calcbeta7(werror).py" 
 }
 function calc6() {
-    location.href = "FirstScript/calcbeta1.py"
+    location.href = "firstscript/calcbeta1.py"
 }
 
 function webcalc() {
-    location.href="PyScript/index.html"
+    location.href="pyscript/index.html"
 }
 
 function bilde1() {
