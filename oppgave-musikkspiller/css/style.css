@@ -7,6 +7,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.parcc{
+    position: absolute;
+    top:85%;
+    padding-left: 5px;
+}
+
 .content {
     background-color: #141414;
     padding: 10px;
@@ -22,12 +28,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-#fimg{
-    background-image: url("../images/Karpe_Diem.png");
-    min-height: 90%;
-    top:0;
 }
 
 .textel{
@@ -48,11 +48,11 @@ body {
     max-height: auto;
 }
 
-.imgart a:link, a:visited, a:active{
+.imgart {
     color:#ddd;
 }
 
-.white{
+.white, .white a:link, a:visited, a:active{
     color:#ddd
 }
 
@@ -129,6 +129,10 @@ body {
     margin-top: 5%;
 }
 
+.flex{
+    display: flex;
+}
+
 @media only screen and (max-width:991px){
 
 .content, .textel{
@@ -136,7 +140,6 @@ body {
     margin: auto;
 } 
 
-/* Style the navigation menu */
 .topnav {
     overflow: hidden;
     background-color: violet;
@@ -144,12 +147,10 @@ body {
     z-index: 500;
 }
 
-/* Hide the links inside the navigation menu (except for logo/home) */
 .topnav #myLinks {
     display: none;
 }
 
-/* Style navigation menu links */
 .topnav a {
     color: black;
     padding: 14px 16px;
@@ -162,7 +163,6 @@ body {
     cursor: pointer;
 }
 
-/* Style the hamburger menu */
 .topnav a.icon {
     background: violet;
     display: block;
@@ -171,7 +171,6 @@ body {
     top: 0;
 }
 
-/* Style the active link (or home/logo) */
 .active {
     background-color: #ddd;
     color: white;
@@ -190,6 +189,36 @@ body {
 
 }
 @media only screen and (min-width:992px){
+
+#fimg{
+    background-image: url("../images/Karpe_Diem.png");
+    min-height: 90%;
+    top:0;
+}
+
+#dimg{
+    background-image: url("../images/Karpe_Diem.png");
+    min-height: 90%;
+    top:0;
+}
+
+#oimg{
+    background-image: url("../images/Karpe_Diem.png");
+    min-height: 90%;
+    top:0;
+}
+
+#eimg{
+    background-image: url("../images/640px-Karpe_Diem_\(5991854872\).jpg");
+    min-height: 90%;
+    top:0;
+}
+
+#simg{
+    background-image: url("../images/Karpe_Diem.png");
+    min-height: 90%;
+    top:0;
+}
 
 .textel{
     max-width: 60%;
@@ -215,7 +244,7 @@ body {
     right: 0;
     overflow: hidden;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     position: -webkit- sticky;
     position: fixed;
     background-color: violet;
@@ -239,9 +268,9 @@ body {
     cursor:pointer;
 }
 
-/* .topnav:hover{
+.topnav a{
     background-color: violet;
-} */
+}
 
 #myLinks{
     display: flex;
