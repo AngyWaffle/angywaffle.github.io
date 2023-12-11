@@ -53,15 +53,4 @@ function bilde5() {
 function ccpage() {
     location.href = "bildeoppgave/index.html"
 }
-
-//Creates the nessecary arrays      
-const texttextarr = ["Bildeoppgave. Denne oppgaven er om CC lisenser.", "Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres."]
-const buttontextarr = ["Gå til oppgave", "Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Gå til prosjekt"]
-const imgsrcarr = ["Images/2048px-Copyright.svg.png", "Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png", "Images/python-logo-only.png"]
-const functionsarr = [ccpage, calc6, oppg5, calc7, angywaffle, webcalc] 
-
-let Aktive =[]
-let Innleveringer = []
-let Fritid = []
-let Gamle = []
     
