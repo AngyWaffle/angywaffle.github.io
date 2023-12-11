@@ -182,10 +182,14 @@ body {
     align-items: center;
 }
 
-.content, .textel{
+.content{
+    text-align: center;
+} 
+
+.textel{
     text-align: center;
     margin: auto;
-} 
+}
 
 .topnav {
     overflow: hidden;
