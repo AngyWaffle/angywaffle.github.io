@@ -261,11 +261,6 @@ body {
     background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
 }
 
-::-webkit-scrollbar {
-    width: 0px;
-}
-
-
 }
 @media only screen and (min-width:992px){
 
