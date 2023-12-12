@@ -55,6 +55,7 @@ body {
 
 .textel{
     color:#ddd;
+    cursor: default;
 }
 
 .textel strong{
@@ -242,7 +243,7 @@ body {
 }
 
 .slider .slide:nth-child(1) {
-    background-image: url("../images/bilde_1_forside.png");
+    background-image: url("../images/bilde_1_forside.jpg");
 }
     
 }
@@ -255,6 +256,10 @@ body {
 
 .caption p.header{
     font-size: 50px;
+}
+
+.bigtext{
+    font-size: 40px;
 }
 
 .no{
@@ -383,6 +388,10 @@ body {
 
 .textel strong{
     font-size: 50px;
+}
+
+.bigtext{
+    font-size: 60px;
 }
 
 .caption p.header{
