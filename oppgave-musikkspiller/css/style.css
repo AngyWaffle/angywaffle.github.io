@@ -1,11 +1,13 @@
 body, html{
     height: 100%;
+    background-color: violet;
 }
 
 body {
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden; /* Hide scrollbars */
+
 }
 
 .right{
@@ -261,7 +263,7 @@ body {
 }
 
 #simg{
-    background-image: url("../images/7766482214_1e9e003d0d_b_crop.png");
+    background-image: url("../images/48507012482_876d76842c_o_croppp.png");
     min-height: 90%;
     top:0;
 }
