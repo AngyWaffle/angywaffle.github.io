@@ -161,7 +161,7 @@ body {
 @media only screen and (max-width:600px) {
 
 #dimg{
-    background-image: url("../images/48506755696_54e3d85e77_o_crop.png");
+    background-image: url("../images/diaspora_forside_mobil.png");
     min-height: 90%;
     top:0;
     -webkit-transform: scale(1);
@@ -171,7 +171,7 @@ body {
 }
 
 #oimg{
-    background-image: url("../images/48506755371_e474647d11_o.jpg");
+    background-image: url("../images/omar_sheriff_forside.jpg");
     min-height: 90%;
     top:0;
     -webkit-transform: scale(1);
@@ -181,7 +181,7 @@ body {
 }
 
 #eimg{
-    background-image: url("../images/7766468224_ce693fde81_o_lalallalal.png");
+    background-image: url("../images/eldre_forside_mobil.png");
     min-height: 90%;
     top:0;
     -webkit-transform: scale(1);
@@ -191,7 +191,7 @@ body {
 }
 
 #simg{
-    background-image: url("../images/48507012482_876d76842c_o_croppppp.png");
+    background-image: url("../images/singel_forside_mobil.png");
     min-height: 90%;
     top:0;
     -webkit-transform: scale(1);
@@ -201,7 +201,7 @@ body {
 }
 
 .slider .slide:nth-child(1) {
-    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
+    background-image: url("../images/bilde_1_forside_crop.png");
 }
 
 }
@@ -209,31 +209,31 @@ body {
 @media only screen and (min-width:601px){
 
 #dimg{
-    background-image: url("../images/52485211812_5818e2c1d0_o.jpg");
+    background-image: url("../images/diaspora_forside_desktop.jpg");
     min-height: 90%;
     top:0;
 }
 
 #oimg{
-    background-image: url("../images/48506755371_e474647d11_o.jpg");
+    background-image: url("../images/omar_sheriff_forside.jpg");
     min-height: 90%;
     top:0;
 }
 
 #eimg{
-    background-image: url("../images/Karpe_Diem_\(5991307933\).jpg");
+    background-image: url("../images/eldre_forside_desktop.jpg");
     min-height: 90%;
     top:0;
 }
 
 #simg{
-    background-image: url("../images/7766482214_1e9e003d0d_b.jpg");
+    background-image: url("../images/singel_forside_desktop.jpg");
     min-height: 90%;
     top:0;
 }
 
 .slider .slide:nth-child(1) {
-    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
+    background-image: url("../images/bilde_1_forside.png");
 }
     
 }
@@ -315,7 +315,7 @@ body {
 }
     
 .topnav .imglink{
-    content: url("../images/1200px-KARPE_-_Logo.svg.png");
+    content: url("../images/karpe_logo.png");
     padding-top: 2px;
     padding-left: 14px;
     padding-right: 14px;
@@ -343,27 +343,27 @@ body {
 }
 
 .slider .slide:nth-child(1) {
-    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\).jpg");
+    background-image: url("../images/bilde_1_forside.jpg");
     animation-delay: 0;
 }
 
 .slider .slide:nth-child(2) {
-    background-image: url("../images/Karpe_Diem.png");
+    background-image: url("../images/bilde_2_forside.png");
     animation-delay: -4s;
 }
 
 .slider .slide:nth-child(3) {
-    background-image: url("../images/Karpe_Diem_\(5991837196\).jpg");
+    background-image: url("../images/bilde_3_forside.jpg");
     animation-delay: -8s;
 }
 
 .slider .slide:nth-child(4) {
-    background-image: url("../images/standard_compressed_34126727406_2cc90ee218_o__1_.jpg");
+    background-image: url("../images/bilde_4_forside.jpg");
     animation-delay: -12s;
 }
 
 .slider .slide:nth-child(5) {
-    background-image: url("../images/3641946305_bfd5cfdda7_b.jpg");
+    background-image: url("../images/bilde_5_forside.jpg");
     animation-delay: -16s;
 }
 
@@ -424,7 +424,7 @@ body {
 }
 
 .topnav .imglink{
-    content: url("../images/1200px-KARPE_-_Logo.svg.png");
+    content: url("../images/karpe_logo.png");
     width: auto;
     max-height: 46px;
 }
