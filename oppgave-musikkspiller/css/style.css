@@ -47,7 +47,6 @@ body {
 }
 
 .textel strong{
-    font-size: 50px;
     text-transform: uppercase;
 }
 
@@ -66,6 +65,10 @@ body {
 
 .white, .white a:link, a:visited, a:active{
     color:#ddd
+}
+
+.black, .black a:link,.black a:visited,.black a:active{
+    color:#141414
 }
 
 .caption {
@@ -155,7 +158,9 @@ body {
 
 @media only screen and (max-width:991px){
 
-
+.textel strong{
+    font-size: 30px;
+}
 
 .caption p.header{
     font-size: 50px;
@@ -238,7 +243,7 @@ body {
 } 
 
 #dimg{
-    background-image: url("../images/52485211812_5818e2c1d0_o.jpg");
+    background-image: url("../images/48506755696_54e3d85e77_o_crop.png");
     min-height: 90%;
     top:0;
 }
@@ -256,7 +261,7 @@ body {
 }
 
 #simg{
-    background-image: url("../images/7766482214_1e9e003d0d_b.jpg");
+    background-image: url("../images/7766482214_1e9e003d0d_b_crop.png");
     min-height: 90%;
     top:0;
 }
@@ -267,6 +272,14 @@ body {
 
 }
 @media only screen and (min-width:992px){
+
+.bno{
+    display: none;
+}
+
+.textel strong{
+    font-size: 50px;
+}
 
 .caption p.header{
     font-size: 100px;
