@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jacob's side</title>
     <link rel="stylesheet" href="CSS/style.css">
-    <script src="js/script.js"></script>
+    <script src="JS/script.js"></script>
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
@@ -71,10 +71,10 @@
         </div>
 
     <script type="text/babel">  
-            const texttextarr = ["Bildeoppgave. Denne oppgaven er om CC lisenser.", "Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres."]
-            const buttontextarr = ["Gå til oppgave", "Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Gå til prosjekt"]
-            const imgsrcarr = ["Images/2048px-Copyright.svg.png", "Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png", "Images/python-logo-only.png"]
-            const functionsarr = [ccpage, calc6, oppg5, calc7, angywaffle, webcalc] 
+            const texttextarr = ["Case musikkspiller. Jeg har laget en artist sin hjemmeside og lagt in spotify for lyd.", "Bildeoppgave. Denne oppgaven er om CC lisenser.", "Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.", "Oppgave 5 er en introduksjon til media querry. ", "Kalkulator current state. Blir oppdatert etter som den blir jobbet med og utviklet. Jobber med GUI.", "AngyWaffle.no er en nettside som jeg bruker for å lære php og databaser.", "Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres."]
+            const buttontextarr = ["Gå til nettside", "Gå til oppgave", "Last ned .py fil", "Gå til prosjekt","Last ned .py fil", "Gå til prosjekt", "Gå til prosjekt"]
+            const imgsrcarr = ["Images/icon_music.png", "Images/2048px-Copyright.svg.png", "Images/firstScript.png", "Images/project_img.png", "Images/calc.png", "Images/angywaffle.png", "Images/python-logo-only.png"]
+            const functionsarr = [karpe, ccpage, calc6, oppg5, calc7, angywaffle, webcalc] 
 
             let Aktive =[]
             let Innleveringer = []
@@ -82,7 +82,7 @@
             let Gamle = []  
 
             //Function to push the div with the correct variables to the correct array
-            for (let x = 0; x < 6; x++){
+            for (let x = 0; x < 7; x++){
             var buttontext = buttontextarr[x];
             var texttext = texttextarr[x];
             var imgsrc = imgsrcarr[x];
@@ -94,11 +94,11 @@
             </div>)
             if(x<0){
                 Aktive.push(divs)
-            }else if(x==0){
+            }else if(x<=1){
                 Innleveringer.push(divs)
-            }else if(x<=2){
+            }else if(x<=3){
                 Gamle.push(divs)
-            }else if(x<=5){
+            }else if(x<=6){
                 Fritid.push(divs)
             }
             }

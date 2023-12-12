@@ -53,4 +53,8 @@ function bilde5() {
 function ccpage() {
     location.href = "bildeoppgave/index.html"
 }
+
+function karpe() {
+    location.href = "oppgave-musikkspiller/index.html"
+}
     
