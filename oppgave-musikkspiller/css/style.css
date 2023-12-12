@@ -266,6 +266,10 @@ body {
     background-image: url("../images/48507012482_876d76842c_o_croppp.png");
     min-height: 90%;
     top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 .slider .slide:nth-child(1) {
