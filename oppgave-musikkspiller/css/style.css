@@ -158,6 +158,86 @@ body {
     position: absolute;
 }
 
+@media only screen and (max-width:600px) {
+
+#dimg{
+    background-image: url("../images/48506755696_54e3d85e77_o_crop.png");
+    min-height: 90%;
+    top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+#oimg{
+    background-image: url("../images/48506755371_e474647d11_o.jpg");
+    min-height: 90%;
+    top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+#eimg{
+    background-image: url("../images/7766468224_ce693fde81_o_lalallalal.png");
+    min-height: 90%;
+    top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+#simg{
+    background-image: url("../images/48507012482_876d76842c_o_croppppp.png");
+    min-height: 90%;
+    top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
+}
+
+.slider .slide:nth-child(1) {
+    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
+}
+
+}
+
+@media only screen and (min-width:601px){
+
+#dimg{
+    background-image: url("../images/52485211812_5818e2c1d0_o.jpg");
+    min-height: 90%;
+    top:0;
+}
+
+#oimg{
+    background-image: url("../images/48506755371_e474647d11_o.jpg");
+    min-height: 90%;
+    top:0;
+}
+
+#eimg{
+    background-image: url("../images/Karpe_Diem_\(5991307933\).jpg");
+    min-height: 90%;
+    top:0;
+}
+
+#simg{
+    background-image: url("../images/7766482214_1e9e003d0d_b.jpg");
+    min-height: 90%;
+    top:0;
+}
+
+.slider .slide:nth-child(1) {
+    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
+}
+    
+}
+
 @media only screen and (max-width:991px){
 
 .textel strong{
@@ -244,70 +324,8 @@ body {
     max-height: 44px;
 } 
 
-#dimg{
-    background-image: url("../images/48506755696_54e3d85e77_o_crop.png");
-    min-height: 90%;
-    top:0;
-    -webkit-transform: scale(1);
-    transform: scale(1); /* you can change the value also */
-    -webkit-transform-origin: center;
-    transform-origin: center;
-}
-
-#oimg{
-    background-image: url("../images/48506755371_e474647d11_o.jpg");
-    min-height: 90%;
-    top:0;
-    -webkit-transform: scale(1);
-    transform: scale(1); /* you can change the value also */
-    -webkit-transform-origin: center;
-    transform-origin: center;
-}
-
-#eimg{
-    background-image: url("../images/7766468224_ce693fde81_o_lalallalal.png");
-    min-height: 90%;
-    top:0;
-    -webkit-transform: scale(1);
-    transform: scale(1); /* you can change the value also */
-    -webkit-transform-origin: center;
-    transform-origin: center;
-}
-
-#simg{
-    background-image: url("../images/48507012482_876d76842c_o_croppppp.png");
-    min-height: 90%;
-    top:0;
-    -webkit-transform: scale(1);
-    transform: scale(1); /* you can change the value also */
-    -webkit-transform-origin: center;
-    transform-origin: center;
-}
-
-.slider .slide:nth-child(1) {
-    background-image: url("../images/1200px-Karpe_Diem_\(5991279607\)_crop.png");
-}
-
 }
 @media only screen and (min-width:992px){
-
-.bno{
-    display: none;
-}
-
-.textel strong{
-    font-size: 50px;
-}
-
-.caption p.header{
-    font-size: 100px;
-}
-
-.scc{
-    position: absolute;
-    top:90%;
-    right:0
-}
 
 @keyframes slide {
     0%, 15%, 100% {
@@ -349,6 +367,25 @@ body {
     animation-delay: -16s;
 }
 
+
+.bno{
+    display: none;
+}
+
+.textel strong{
+    font-size: 50px;
+}
+
+.caption p.header{
+    font-size: 100px;
+}
+
+.scc{
+    position: absolute;
+    top:90%;
+    right:0
+}
+
 .width{
     width: 50%;
 }    
@@ -372,30 +409,6 @@ body {
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background-color: #141414;
-}
-
-#dimg{
-    background-image: url("../images/52485211812_5818e2c1d0_o.jpg");
-    min-height: 90%;
-    top:0;
-}
-
-#oimg{
-    background-image: url("../images/48506755371_e474647d11_o.jpg");
-    min-height: 90%;
-    top:0;
-}
-
-#eimg{
-    background-image: url("../images/Karpe_Diem_\(5991307933\).jpg");
-    min-height: 90%;
-    top:0;
-}
-
-#simg{
-    background-image: url("../images/7766482214_1e9e003d0d_b.jpg");
-    min-height: 90%;
-    top:0;
 }
 
 .textel{
