@@ -248,12 +248,20 @@ body {
     background-image: url("../images/48506755696_54e3d85e77_o_crop.png");
     min-height: 90%;
     top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 #oimg{
     background-image: url("../images/48506755371_e474647d11_o.jpg");
     min-height: 90%;
     top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 #eimg{
