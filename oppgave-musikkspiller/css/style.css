@@ -260,6 +260,10 @@ body {
     background-image: url("../images/Karpe_Diem_\(5991307933\)_mobileeee.png");
     min-height: 90%;
     top:0;
+    -webkit-transform: scale(1);
+    transform: scale(1); /* you can change the value also */
+    -webkit-transform-origin: center;
+    transform-origin: center;
 }
 
 #simg{
