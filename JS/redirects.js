@@ -8,27 +8,6 @@ function burgerMenu() {
         x.style.display = "block";
     }
 }
-    
-function oppg5() {
-    location.href = "oppgave_5/index.html"
-}
-
-//external links need seperate functions
-function angywaffle() {
-    location.href = "https://angywaffle.no/tempstore";
-}
-
-//download function
-function calc7() {
-    location.href = "calculator/calcbeta7(werror).py" 
-}
-function calc6() {
-    location.href = "firstscript/calcbeta1.py"
-}
-
-function webcalc() {
-    location.href="pyscript/index.html"
-}
 
 function bilde1() {
     location.href = "https://www.flickr.com/photos/devdsp/6999839463"
@@ -49,12 +28,7 @@ function bilde4() {
 function bilde5() {
     location.href = "https://www.flickr.com/photos/gsfc/8804537584"
 }
-
-function ccpage() {
-    location.href = "bildeoppgave/index.html"
-}
-
-function karpe() {
-    location.href = "oppgave-musikkspiller/index.html"
-}
     
+function redirect(link){
+    location.href = link;
+}

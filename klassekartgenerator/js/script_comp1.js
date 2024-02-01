@@ -1,6 +1,8 @@
+var aktivKlasse;
+
 function klassekart()
 {   
-    let studentsFinal = ["<table><tr>"];
+    let studentsFinal = "<table><tr>";
     let jsonObj = JSON.parse(localStorage.getItem(aktivKlasse))
     console.log(jsonObj)
     if(jsonObj!==null){
@@ -13,11 +15,11 @@ function klassekart()
         var studentsArray = students.split(",");
     }
     const x = studentsArray.length;
-    const seatnum= document.getElementById("seatNum").value;
-    const rownnum= document.getElementById("rowNum").value;
-    let balance = [];
-    let current = [];
-    let studArr = [];
+    const a = document.getElementById("seatNum").value;
+    const f = document.getElementById("rowNum").value;
+    balance = [];
+    current = [];
+    studArr = [];
     let b = 0;
     let c = 0;
     let y = 0;
@@ -26,17 +28,17 @@ function klassekart()
     for(i=0; x > i; i++)
     {
         
-        if(Math.ceil(x/rownnum) == c){
-            studentsFinal.push("</tr><tr>")
+        if(Math.ceil(x/f) == c){
+            studentsFinal+="</tr><tr>"
             c=0;
             b=0;
         }
-        if(seatnum== b)
+        if(a == b)
         {   
             if(alone==true){
-                studentsFinal.push("<td></td>");
-            }else if(alone==false&&Math.ceil(x/rownnum) !=c+1&& x!=y+1){
-                studentsFinal.push("<td></td>");
+                studentsFinal += "<td></td>";
+            }else if(alone==false&&Math.ceil(x/f) !=c+1&& x!=y+1){
+                studentsFinal += "<td></td>";
             }
             b=0;
         }
@@ -72,12 +74,12 @@ function klassekart()
             balance.push(balstr);
             studArr.push(student)
         }
-        if(Math.floor(x/rownnum)-1 == c)
+        if(Math.floor(x/f)-1 == c)
         {
-            studentsFinal.push(`<td>${student}</td>`);
+            studentsFinal += `<td>${student}</td>`
         }else 
         {
-            studentsFinal.push(`<td>${student}</td>`);
+            studentsFinal += `<td>${student}</td>`;
         }
         b++;
         c++;
@@ -95,9 +97,9 @@ function klassekart()
 /*     if(aktivKlasse!==null&&aktivKlasse!==undefined&&aktivKlasse!==""){
         localStorage.setItem(aktivKlasse, JSON.stringify(jsonObj));
     } */
-    studentsFinal.push("</tr></table>")
-    document.getElementById("output").innerHTML = studentsFinal.toString().replace(',', '');
-    console.log(studentsFinal.toString().replace(',', ' '))
+    studentsFinal += "</tr></table>"
+    document.getElementById("output").innerHTML = studentsFinal;
+    console.log(studentsFinal)
 }
 
 function createClass(){
