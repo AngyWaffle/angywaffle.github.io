@@ -1,9 +1,10 @@
 function klassekart()
 {   
+    let aktivKlasse = sessionStorage.getItem("aktiv");
     let studentsFinal = ["<table><tr>"];
     let jsonObj = JSON.parse(localStorage.getItem(aktivKlasse))
     console.log(jsonObj)
-    if(jsonObj!==null){
+    if(jsonObj!==null&&jsonObj!==undefined){
         var old = jsonObj.Old
         var oldBal = jsonObj.oldBal
         var studentsArray = jsonObj.students
@@ -114,9 +115,10 @@ function createClass(){
 }
 
 function loadClass(){
-    let jsonObj = JSON.parse(localStorage.getItem(document.getElementById("klasse").value))
-    document.getElementById("userInput").innerHTML = jsonObj.students
     aktivKlasse = document.getElementById("klasse").value
+    let jsonObj = JSON.parse(localStorage.getItem(aktivKlasse))
+    document.getElementById("userInput").innerHTML = jsonObj.students
+    window.sessionStorage.setItem("aktiv", aktivKlasse)
 }
 
 /* Navn1, Navn2, Navn3, Navn4, Navn5 */

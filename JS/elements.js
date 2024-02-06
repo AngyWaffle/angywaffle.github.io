@@ -8,7 +8,6 @@ fetch(apiUrl)
     return response.json();
   })
   .then(myObj => {
-    console.log(myObj)
     myObj.pages.forEach(element => {
         var divs = (`<div class="project">
         <img src=${element.imgsrc} alt="Bilde av prosjektet sin forside"/>
