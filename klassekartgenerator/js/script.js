@@ -97,8 +97,8 @@ function klassekart()
         localStorage.setItem(aktivKlasse, JSON.stringify(jsonObj));
     } */
     studentsFinal.push("</tr></table>")
-    document.getElementById("output").innerHTML = studentsFinal.toString().replace(',', '');
-    console.log(studentsFinal.toString().replace(',', ' '))
+    document.getElementById("output").innerHTML = studentsFinal.join("");
+    console.log(studentsFinal.join(""))
 }
 
 function createClass(){

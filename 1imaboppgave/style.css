@@ -1,0 +1,41 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    background-color: #655A7C;
+    padding:20px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.content p{
+    font-size: 32px;
+}
+
+.yas select{
+    height: 50px;
+    width:200px;
+    font-size: 40px;
+}
+
+.yas input{
+    height: 50px;
+    width:400px;
+    font-size: 40px;
+}
+
+.yas button{
+    height: 50px;
+    width:200px;
+    font-size: 40px;
+}
+
+.yas {
+    font-size: 40px;
+    color: white;
+}

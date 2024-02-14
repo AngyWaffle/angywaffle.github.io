@@ -4,21 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" id="nInput" placeholder="Skriv ett ord?">
-    <button onclick="norathing()">Jaaaaa</button>
-    <p id="outputdos"></p>
-    <br><br><br>
-    <input type="text" id="mInput" placeholder="Liter to =>">
-    <select name="measure" id="measure">
-        <option value="Gallons">Gallons</option>
-        <option value="Ounces">Ounces</option>
-        <option value="Cups">Cups</option>
-        <option value="Spiseskjeer">Spiseskjeer</option>
-      </select>
-    <button onclick="maddeforstaarikkejs()">Test</button>
-    <p id="output"></p>
+    <div class="content">
+    <p><strong>Palindrom tester</strong></p>
+        <div class="yas">
+            <input type="text" id="nInput" placeholder="Skriv ett ord?">
+            <button onclick="norathing()">Jaaaaa</button>
+            <p id="outputdos"></p>
+        </div>
+    </div>
+
+    <div class="content">
+        <p><strong>Måleenhetconverter</strong></p>
+        <div class="yas">
+            <input type="text" id="userinput" placeholder="Hvor mye?" onchange="omdettefunkerburdenorafaasekser()">
+            <select name="measure" id="verdifra" onchange="omdettefunkerburdenorafaasekser()">
+            <option value="3.78541">Gallons</option>
+            <option value="0.0295735">Ounces</option>
+            <option value="0.236588">Cups</option>
+            <option value="0.0147868">Spiseskjeer</option>
+            <option value="1">Liter</option>
+            </select>
+            ==>
+            <select name="measure" id="verditil" onchange="omdettefunkerburdenorafaasekser()">
+            <option value="3.78541">Gallons</option>
+            <option value="0.0295735">Ounces</option>
+            <option value="0.236588">Cups</option>
+            <option value="0.0147868">Spiseskjeer</option>
+            <option value="1">Liter</option>
+            </select> 
+            <p id="output"></p>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html>

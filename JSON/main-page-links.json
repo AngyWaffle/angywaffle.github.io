@@ -12,7 +12,7 @@
         "id":"Innleveringer"},
         {"imgsrc":"Images/firstScript.png",
         "texttext":"Kalkulator. Dette er mitt første script og jeg har jobbet lite på det i etterkant.",
-        "redirects":"Images/firstScript.png",
+        "redirects":"firstsctipt/calcbeta1.py",
         "buttontext":"Last ned .py fil",
         "id":"GamlePro"},
         {"imgsrc":"Images/project_img.png",
@@ -32,7 +32,7 @@
         "id":"FritidPro"},
         {"imgsrc":"Images/python-logo-only.png",
         "texttext":"Webcalc er koden til kalkulatoren omgjort til å fungere i web. Work in progres.",
-        "redirects":"pyscript/index.html",
+        "redirects":"PyScript/index.html",
         "buttontext":"Gå til nettside",
         "id":"FritidPro"}
     ]
