@@ -64,7 +64,7 @@ body, html {
 #rn{
     background-image: url("../images/sky.png");
     width: 100%;
-    height: 100%;
+    height: 82vh;
 }
 
 .parallax {
@@ -87,6 +87,7 @@ body, html {
     text-align: center;
     color: white;
     font-size: 30px;
+    margin-bottom: 30vh;
 }
 
 .imagine{
@@ -97,7 +98,7 @@ body, html {
 
 #fjell{
     z-index: 3;
-    bottom: 0px;
+    bottom: 0vh;
 }
 
 .slay{
@@ -108,25 +109,79 @@ body, html {
 }
 
 .beach{
-    top: 130px;
+    top: 15vh;
     position: absolute;
 }
 
 .kultsymbol{
-    width: 300px;
+    width: 30vh;
     height: auto;
     position: absolute;
-    bottom: -200px;
+    bottom: -20vh;
     -webkit-animation: slide 0.5s forwards;
     -webkit-animation-delay: 0.5s;
     animation: slide 0.5s forwards;
     animation-delay: 0.5s;
 }
 
+@layer demo {
+    #pie {
+      --thickness: 3px;
+      --_inner: calc(70% - var(--thickness));
+      --_outer: calc(var(--_inner) + 1px); /* fixes aliasing */
+      
+      /* hides the inner part of the conic gradient */
+      mask: radial-gradient(circle, #0000 var(--_inner), #000 var(--_outer));
+      
+      /* the conic gradient, transparent after --ng */
+      background-image: conic-gradient(deeppink, cyan var(--ng), #0000 0);
+    }
+  }
+  
+  @layer demo.support {
+    #pie {
+      aspect-ratio: 1;
+      inline-size: 50vmin;
+      border-radius: 50%;
+    }
+    
+    .chart {
+      display: grid;
+      place-items: center;
+    }
+    
+    .chart > * {
+      grid-area: 1/1;
+    }
+    
+    .chart > h3 {
+      font-variant-numeric: tabular-nums;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+  
+    html {
+      block-size: 100%;
+      color-scheme: dark light;
+    }
+  
+    body {
+      min-block-size: 100%;
+      font-family: system-ui, sans-serif;
+  
+      display: grid;
+      place-content: center;
+      gap: 5vmin;
+    }
+  }
+
 @-webkit-keyframes slide {
-    100% { bottom: 350px; }
+    100% { bottom: 40vh; }
 }
 
 @keyframes slide {
-    100% { bottom: 350px; }
+    100% { bottom: 40vh; }
 }
