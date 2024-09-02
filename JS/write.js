@@ -1,4 +1,4 @@
-const apiUrl = 'C:/Users/jacob/Documents/GitHub/angy.github.io/JSON/main-page-links.json'
+const apiUrl = '../JSON/main-page-links.json'
 
 fetch(apiUrl)
   .then(response => {
