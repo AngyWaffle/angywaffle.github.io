@@ -1,6 +1,4 @@
-const { json } = require("body-parser");
-
-const apiUrl = 'JSON/main-page-links.json'
+const apiUrl = '../JSON/main-page-links.json'
 
 fetch(apiUrl)
   .then(response => {
