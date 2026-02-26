@@ -6,29 +6,28 @@
       "title": "A En skole for alle",
       "level": 1,
       "content": [
-            {
-              "text":"Skolen skal være et inkluderende sted hvor alle uavhengig av bakgrunn, økonomi og ferdigheter har like muligheter til å nå sine mål. For at alle elever skal få mulighet til å nå målene sine, må opplæringen legge til rette for det. ",
-              "type":"p"
-            },
-            {
-              "text":"Alle elever skal ha lik tilgang til videregående opplæring, og for å oppnå dette må opplæringen tilpasses slik at den er tilgjengelig for alle. Det er utfordrende å tilby en opplæring som imøtekommer ulike sosioøkonomiske bakgrunner, hvor noen elever kommer fra hjem med omfattende bokhyller, mens andre lærer praktiske ferdigheter fra tidlig alder. Uansett bør ikke foreldrenes ressurser påvirke elevers utbytte av opplæringen. ",
-              "type":"p"
-            },
-            {
-              "text":"Elevenes sosioøkonomiske bakgrunn og forhold utenfor skolen skal ikke være en hindring for valg av utdanningsløp eller for suksess i skolen. Noen elever har foresatte som har god tid til å engasjere seg i og hjelpe til med skolearbeidet, mens andre har foresatte med dårlig råd, som ikke har tid eller forutsetninger til å bistå elevene i deres utdanningsløp. Dette skal ikke gi utslag på elevenes mulighet til å lykkes i fagene. Skolesystemet må jobbe mot å realisere lik rett til utdanning, hvor elevers ønsker og behov styrer valg av skole og utdanningsløp, uavhengig av økonomiske ressurser. Lik rett til utdanning er en sentral verdi i det norske utdanningssystemet, og for å sikre en skole for alle må politiske beslutningstakere prioritere skolen i sine budsjetter.",
-              "type":"p"
-            },
-            {
-              "text":"For å sikre en gratis skole for alle må skolen være en prioritet i Stortinget og skoleeiernes budsjetter. Det er viktig at skolesystemet som helhet har som mål å realisere lik rett til utdanning, slik at alle elever kan stille likt i opplæringssystemet. Intensjonen er å oppnå like muligheter for alle elever, uavhengig av økonomisk bakgrunn, og dette må være et overordnet mål for hele utdanningssystemet.",
-              "type":"p"
-            }
-          ],
+    {
+      "text":"Skolen skal være et inkluderende sted hvor alle uavhengig av bakgrunn, økonomi og ferdigheter har like muligheter til å nå sine mål. For at alle elever skal få mulighet til å nå målene sine, må opplæringen legge til rette for det. ",
+      "type":"p"
+    },
+    {
+      "text":"Alle elever skal ha lik tilgang til videregående opplæring, og for å oppnå dette må opplæringen tilpasses slik at den er tilgjengelig for alle. Det er utfordrende å tilby en opplæring som imøtekommer ulike sosioøkonomiske bakgrunner, hvor noen elever kommer fra hjem med omfattende bokhyller, mens andre lærer praktiske ferdigheter fra tidlig alder. Uansett bør ikke foreldrenes ressurser påvirke elevers utbytte av opplæringen. ",
+      "type":"p"
+    },
+    {
+      "text":"Elevenes sosioøkonomiske bakgrunn og forhold utenfor skolen skal ikke være en hindring for valg av utdanningsløp eller for suksess i skolen. Noen elever har foresatte som har god tid til å engasjere seg i og hjelpe til med skolearbeidet, mens andre har foresatte med dårlig råd, som ikke har tid eller forutsetninger til å bistå elevene i deres utdanningsløp. Dette skal ikke gi utslag på elevenes mulighet til å lykkes i fagene. Skolesystemet må jobbe mot å realisere lik rett til utdanning, hvor elevers ønsker og behov styrer valg av skole og utdanningsløp, uavhengig av økonomiske ressurser. Lik rett til utdanning er en sentral verdi i det norske utdanningssystemet, og for å sikre en skole for alle må politiske beslutningstakere prioritere skolen i sine budsjetter.",
+      "type":"p"
+    },
+    {
+      "text":"For å sikre en gratis skole for alle må skolen være en prioritet i Stortinget og skoleeiernes budsjetter. Det er viktig at skolesystemet som helhet har som mål å realisere lik rett til utdanning, slik at alle elever kan stille likt i opplæringssystemet. Intensjonen er å oppnå like muligheter for alle elever, uavhengig av økonomisk bakgrunn, og dette må være et overordnet mål for hele utdanningssystemet.",
+      "type":"p"
+    }
+  ],
       "children": [
         {
           "id": "A.1",
           "title": "A.1 Rammer i opplæringen",
           "level": 2,
-          
           "children": [
             {
               "id": "A.1.1",
@@ -49,7 +48,8 @@
                     "Skolen er en offentlig oppgave. Det offentlige er best egnet til å ivareta lik rett til utdanning og muligheten for at alle elever far den utdanningen de ensker.",
                     "Privatskoler med et pedagogisk alternativ kan være et supplement til den offentlige skolen, inntil det offentlige kan tilby et tilfredsstillende tilbud.",
                     "Fylkeskommunen og kommunen er best egnet til å ivareta grunnopplæringen.",
-                    "Fylkeskommunene og kommunene må sikres tilstrekkelig med statlig tilskudd til drive en god skole."
+                    "Fylkeskommunene og kommunene må sikres tilstrekkelig med statlig tilskudd til",
+                    "drive en god skole."
                   ]
                 }
               ]
@@ -190,7 +190,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "A.2",
@@ -322,7 +323,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "A.3",
@@ -341,8 +343,7 @@
                 {
                   "type": "ul",
                   "items": [
-                    "All leering skal ha fokus på & motivere elevene.",
-                    "Metoder som er gode for motivasjon er blant annet tilbakemeldinger, valgfrihet, elevmedbvirkning og praktiske oppgaver.",
+                    "All leering skal ha fokus på & motivere elevene. e. Metoder som er gode for motivasjon er blant annet tilbakemeldinger, valgfrihet, elevmedbvirkning og praktiske oppgaver.",
                     "Det er viktig at elevene opplever at undervisningen er relevant for deres samtid og framtid.",
                     "Larere skal etterstrebe god kontakt med elever som er demotiverte.",
                     "Elever skal ikke settes opp mot hverandre, og det skal vaere valgfritt hvorvidt en elev vil delta i konkurransesituasjoner i regi av skolen.",
@@ -432,7 +433,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "A.4",
@@ -520,7 +522,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
       ]
     },
@@ -658,13 +661,15 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "B.2",
           "title": "B.2 En skole tilpasset alle",
           "level": 2,
-          "children": []
+          "children": [],
+          "content": []
         },
         {
           "id": "B.21",
@@ -779,14 +784,11 @@
                 {
                   "type": "ul",
                   "items": [
-                    "Det må i større grad forskes på områder der man mangler tall og forståelse på hvorfor skolen er slik den er.",
-                    "Skolemiljøundersøkelsen og lærlingundersøkelsen bør avdekke alle sider ved situasjonen til den norske skolen sett fra elevens og lærlingenes perspektiv, samtidig som den tar hensyn til deres personvern.",
+                    "Det må i større grad forskes på områder der man mangler tall og forståelse på hvorfor skolen er slik den er. e. Skolemiljøundersøkelsen og lærlingundersøkelsen bør avdekke alle sider ved situasjonen til den norske skolen sett fra elevens og lærlingenes perspektiv, samtidig som den tar hensyn til deres personvern.",
                     "Det må legges til rette for strukturer der elever er med å medvirke i hvilke prøver og undersøkelser som skal benyttes i kvalitetsutviklingsarbeidet.",
                     "Elever må få være med å medvirke på hvilke frivillige deler i skolemiljøundersøkelsen som skal tas, og hvor mange ganger den skal tas på hver enkelt skole.",
                     "Skolemiljøundersøkelsen skal være obligatorisk for 5. trinn, 7. trinn, 10. trinn og Vg1. For de andre skoletrinnene fra 6. trinn til Vg3, skal det være frivillig å gjennomføre undersøkelsen. Det skal utredes hvordan man kan systematisk undersøke elevenes opplevelse av skolemiljøet på 1.-4. trinn.",
-                    "Avvikle dagens elevundersøkelse og erstatte den med en ny skolemiljøundersøkelse hvor elevene får si sin mening om det fysiske og psykososiale skolemiljøet, og sin grad av medvirkning.",
-                    "Nasjonale myndigheter må vurdere hvor strengt informasjonen fra den nye skolemiljøundersøkelsen må skjermes, informasjon fra undersøkelsen skal ikke gå på bekostning av elevenes personvern.",
-                    "Informasjon fra skolemiljøundersøkelsen skal inngå i kvalitetsdialogene."
+                    "Avvikle dagens elevundersøkelse og erstatte den med en ny skolemiljøundersøkelse hvor elevene får si sin mening om det fysiske og psykososiale skolemiljøet, og sin grad av medvirkning. e. Nasjonale myndigheter må vurdere hvor strengt informasjonen fra den nye skolemiljøundersøkelsen må skjermes, informasjon fra undersøkelsen skal ikke gå på bekostning av elevenes personvern. e. Informasjon fra skolemiljøundersøkelsen skal inngå i kvalitetsdialogene."
                   ]
                 }
               ]
@@ -867,8 +869,7 @@
                     "Dersom elevene ønsker det, skal det legges til rette for en fleksitidsordning med organiserte studietimer i tillegg til vanlige undervisningsøkter.",
                     "Elevene skal ikke tvinges til å være ute i friminuttene på skolen.",
                     "Det skal tilrettelegges for jevnlige pauser i løpet av skoledagen.",
-                    "Elever skal ha mulighet til å inngå avtaler med skolens ledelse om å gjennomføre deler av skolegangen uten fast timestruktur.",
-                    "Nye ordninger som medfører vesentlige endringer i skolehverdagen skal ikke innføres midt i et skoleår, hverken i vurderingspraksis, faglig innhold, undervisningen eller annet.",
+                    "Elever skal ha mulighet til å inngå avtaler med skolens ledelse om å gjennomføre deler av skolegangen uten fast timestruktur. e. Nye ordninger som medfører vesentlige endringer i skolehverdagen skal ikke innføres midt i et skoleår, hverken i vurderingspraksis, faglig innhold, undervisningen eller annet.",
                     "Elevene skal ha krav på en pause på minimum 5 minutter i alle ordinære skoletimer som varer lenger enn 45 minutter.",
                     "Elevene skal ha krav på minimum 30 minutter sammenhengende lunsjpause, på lik linje med alle i arbeidslivet.",
                     "Videregående eleven vet selv hvor de får mest læringsutbytte. Og eventuelt fravær relatert til ekstraordinære eksterne jobb/lærings muligheter, skal kunne gyldiggjøres."
@@ -1121,9 +1122,12 @@
                   "text": "Elevorganisasjonen mener at:"
                 },
                 {
+                  "type": "p",
+                  "text": "e. Ved digitale prøver skal skolene bruke teknologiske ressurser som forenkler, samt legger til rette for den anonyme vurderingen. Dette uansett storrelse på preven."
+                },
+                {
                   "type": "ul",
                   "items": [
-                    "Ved digitale prøver skal skolene bruke teknologiske ressurser som forenkler, samt legger til rette for den anonyme vurderingen. Dette uansett storrelse på preven.",
                     "Ved skriftlige prøver skal det etterstrebes å bruke elevnummer.",
                     "Eksamen, heldagsprever, fagdager, mappevurderinger og andre stgrre prøver skal rettes og vurderes anonymt.",
                     "Sensorene under muntlig eksamen skal vaere eksterne, og fagleerer skal ikke ta del i vurderingen.",
@@ -1268,9 +1272,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     },
     {
       "id": "C",
@@ -1376,7 +1382,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "C.2",
@@ -1444,7 +1451,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "C.3",
@@ -1582,7 +1590,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "C.4",
@@ -1687,7 +1696,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "C.5",
@@ -1735,9 +1745,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     },
     {
       "id": "D",
@@ -1894,7 +1906,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "D.2",
@@ -2147,10 +2160,8 @@
                   "text": "Elevorganisasjonen mener at:"
                 },
                 {
-                  "type": "ul",
-                  "items": [
-                    "Skoler som en helhet kan spesialisere seg innenfor fagfelt som for eksempel idrett, realfag, kreative fag eller diverse yrkesfag."
-                  ]
+                  "type": "p",
+                  "text": "e. Skoler som en helhet kan spesialisere seg innenfor fagfelt som for eksempel idrett, realfag, kreative fag eller diverse yrkesfag."
                 }
               ]
             },
@@ -2172,9 +2183,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     },
     {
       "id": "E",
@@ -2281,8 +2294,7 @@
                 {
                   "type": "ul",
                   "items": [
-                    "Ansettelse av lærere uten formell, godkjent lærerutdanning skal ikke skje i skolen.",
-                    "Alle elever har rett på en lærer med riktig kompetanse for undervisningen."
+                    "Ansettelse av lærere uten formell, godkjent lærerutdanning skal ikke skje i skolen. e. Alle elever har rett på en lærer med riktig kompetanse for undervisningen."
                   ]
                 }
               ]
@@ -2428,7 +2440,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "E.2",
@@ -2462,13 +2475,14 @@
                   "text": "Elevorganisasjonen mener at:"
                 },
                 {
+                  "type": "p",
+                  "text": "e. Nasjonale prøver og andre kartleggingstiltak kan være et positivt hjelpemiddel for å fremme tilpasset opplæring og utvikling av skolesystemet."
+                },
+                {
                   "type": "ul",
                   "items": [
-                    "Nasjonale prøver og andre kartleggingstiltak kan være et positivt hjelpemiddel for å fremme tilpasset opplæring og utvikling av skolesystemet.",
-                    "Resultater fra nasjonale kartleggingsprøver skal ikke offentliggjøres, for å forhindre konkurranser mellom skoler.",
-                    "Nasjonale prøver må kvalitetssikres og evalueres jevnlig.",
-                    "Resultatene fra de læringsstøttende prøvene skal diskuteres i elevrådet, for å sikre elevmedvirkning i arbeidet med kvalitetsutvikling.",
-                    "Hvis ikke progresjonsprøver er mulig å realisere, er læringsstøttende prøver den riktige erstatningen for nasjonale prøver. Resultatene skal brukes i hvert nivå av kvalitetsdialogene, for å bidra til kvalitetsutvikling.",
+                    "Resultater fra nasjonale kartleggingsprøver skal ikke offentliggjøres, for å forhindre konkurranser mellom skoler. e. Nasjonale prøver må kvalitetssikres og evalueres jevnlig.",
+                    "Resultatene fra de læringsstøttende prøvene skal diskuteres i elevrådet, for å sikre elevmedvirkning i arbeidet med kvalitetsutvikling. e. Hvis ikke progresjonsprøver er mulig å realisere, er læringsstøttende prøver den riktige erstatningen for nasjonale prøver. Resultatene skal brukes i hvert nivå av kvalitetsdialogene, for å bidra til kvalitetsutvikling.",
                     "Læringsstøttende prøver er et bedre alternativ enn dagens nasjonale prøver.",
                     "- Læringsstøttende prøver skal sekundært gi informasjon til skoleeiere og nasjonale myndigheter.",
                     "Det skal utredes hvilke ferdigheter og/eller fag det skal være læringsstøttende prøver i, og hvordan offentliggjøring av informasjon fra prøvene kan begrenses."
@@ -2476,7 +2490,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "E.3",
@@ -2503,8 +2518,7 @@
                     "Alle skoler skal ha et godt utbygd IKT-tilbud med en datamaskin til hver elev med oppdatert programvare, maskinvare og sikkerhetstiltak.",
                     "Larernes og annet personell sin kompetanse i IKT og bruk av digitale hjelpemidler skal styrkes gjennom regelmessig etter- og videreutdanning.",
                     "IKT-tilbudet skal veere tilgjengelig for alle elever i løpet av skolehverdagen.",
-                    "Det skal veere muligheter for & bruke elevens personlige datamaskin på skolen på lik linje som en skole-PC.",
-                    "Bruken av IKT i skolen bør regelmessig evalueres, og det bør vurderes hvordan og i hvilken grad IKT skal anvendes på hver enkelt skole.",
+                    "Det skal veere muligheter for & bruke elevens personlige datamaskin på skolen på lik linje som en skole-PC. e. Bruken av IKT i skolen bør regelmessig evalueres, og det bør vurderes hvordan og i hvilken grad IKT skal anvendes på hver enkelt skole.",
                     "Det skal utarbeides retningslinjer for bruk av datamaskin i alle situasjoner elever bruker datamaskin, for eksempel ved gjennomfering av eksamen, forhindring av juks og hvordan man forholder seg til bruk av ikke-pedagogiske dataprogram.",
                     "Ved reparasjon og lignende av elevens datamaskin skal skolen tilby en midlertidig erstatningsmaskin.",
                     "|stedet for å stille seg kritisk til bruk av ukonvensjonell teknologi, som mobiltelefoner, nettbrett, eller bruk av mobilhotell, bør skolen heller bruke disse verktgyene for å utvikle nye og innovative leeringsmetoder.",
@@ -2588,7 +2602,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "E.4",
@@ -2628,9 +2643,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     },
     {
       "id": "F",
@@ -2851,8 +2868,7 @@
                     "Oppleeringskontor er en god måte å sikre at lærlinger får opplæringen de har krav på.",
                     "Opplæringskontorene skal gjennomføre en anonym halvårsevaluering der lærlingene og medlemsbedriftene får komme med tilbakemeldinger til opplæringskontoret.",
                     "Det skal være tydeligere rammer for opplæringskontorene for å sikre at den varierende kvaliteten på opplæringskontorene blir mindre.",
-                    "Fylkeskommunen skal ha ansvar for å kvalitetssikre opplæringskontorene.",
-                    "Fylkeskommunen og opplæringskontorene sin oppfølging av lærlinger må forbedres.",
+                    "Fylkeskommunen skal ha ansvar for å kvalitetssikre opplæringskontorene. e. Fylkeskommunen og opplæringskontorene sin oppfølging av lærlinger må forbedres.",
                     "Fylkeskommunen må i større grad følge opp at opplæringskontorene gjør jobben sin.",
                     "Fylkeskommunen har et ansvar for å følge opp at lærlingene har det bra på arbeidsplassen.",
                     "Dersom en lærebedrift ikke klarer & gjennomføre undervisning i alle kompetansemålene, skal opplæringskontoret sørge for at lærlingen får tilstrekkelig opplæring i kompetansemålene.",
@@ -3047,9 +3063,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     },
     {
       "id": "G",
@@ -3121,7 +3139,8 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         },
         {
           "id": "G.2",
@@ -3184,9 +3203,11 @@
                 }
               ]
             }
-          ]
+          ],
+          "content": []
         }
-      ]
+      ],
+      "content": []
     }
   ]
 }
