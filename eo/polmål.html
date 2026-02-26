@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Politisk måldokument</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --eo-orange:#F86040;
+      --eo-blue:#004060;
+      --eo-text:#111;
+      --eo-muted: rgba(0,0,0,.60);
+      --bd: rgba(0,0,0,.14);
+    }
+
+    html, body{
+      margin:0;
+      padding:0;
+      background: transparent;
+      font-family:"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      color:var(--eo-text);
+      font-size:16px;
+      line-height:1.55;
+    }
+
+    .wrap{ max-width: 980px; margin:0 auto; padding: 14px 12px 40px; }
+    .top{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom: 12px; }
+    /*.title{ font-weight:700; font-size:18px; }*/
+    .search{ flex:1; min-width: 220px; }
+    .search input{
+      width:100%;
+      font: inherit;
+      padding:10px 12px;
+      border:1px solid var(--bd);
+      border-radius: 10px;
+      background: transparent;
+      outline: none;
+    }
+    .hint{ font-size:13px; color: var(--eo-muted); margin-top: 6px; }
+
+    details{ margin: 8px 0; }
+    summary{ cursor:pointer; }
+    .lvl{ margin-left: 16px; margin-top: 6px; }
+
+    details.l1 > summary{ color:var(--eo-orange); font-weight:700; font-size:18px; }
+    details.l2 > summary{ color:var(--eo-blue);   font-weight:600; font-size:16px; }
+    details.l3 > summary{ color:var(--eo-text);   font-weight:600; font-size:15px; }
+
+    .content{ margin-top: 8px; }
+    .content p{ margin: 8px 0; }
+    .content ul{ margin: 8px 0 8px 18px; }
+    .content li{ margin: 4px 0; }
+    .label{ font-weight:600; }
+
+    mark{ background: rgba(248,96,64,.22); padding: 0 .12em; }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="title" id="docTitle">Dokument</div>
+     <!--<div class="search">
+        <input id="q" type="search" placeholder="Søk i dokumentet…" autocomplete="off" />
+        <div class="hint" id="hint"></div>
+      </div>--> 
+    </div>
+
+    <div id="tree"></div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
