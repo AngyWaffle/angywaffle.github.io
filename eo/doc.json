@@ -5,11 +5,30 @@
       "id": "A",
       "title": "A En skole for alle",
       "level": 1,
+      "content": [
+            {
+              "text":"Skolen skal være et inkluderende sted hvor alle uavhengig av bakgrunn, økonomi og ferdigheter har like muligheter til å nå sine mål. For at alle elever skal få mulighet til å nå målene sine, må opplæringen legge til rette for det. ",
+              "type":"p"
+            },
+            {
+              "text":"Alle elever skal ha lik tilgang til videregående opplæring, og for å oppnå dette må opplæringen tilpasses slik at den er tilgjengelig for alle. Det er utfordrende å tilby en opplæring som imøtekommer ulike sosioøkonomiske bakgrunner, hvor noen elever kommer fra hjem med omfattende bokhyller, mens andre lærer praktiske ferdigheter fra tidlig alder. Uansett bør ikke foreldrenes ressurser påvirke elevers utbytte av opplæringen. ",
+              "type":"p"
+            },
+            {
+              "text":"Elevenes sosioøkonomiske bakgrunn og forhold utenfor skolen skal ikke være en hindring for valg av utdanningsløp eller for suksess i skolen. Noen elever har foresatte som har god tid til å engasjere seg i og hjelpe til med skolearbeidet, mens andre har foresatte med dårlig råd, som ikke har tid eller forutsetninger til å bistå elevene i deres utdanningsløp. Dette skal ikke gi utslag på elevenes mulighet til å lykkes i fagene. Skolesystemet må jobbe mot å realisere lik rett til utdanning, hvor elevers ønsker og behov styrer valg av skole og utdanningsløp, uavhengig av økonomiske ressurser. Lik rett til utdanning er en sentral verdi i det norske utdanningssystemet, og for å sikre en skole for alle må politiske beslutningstakere prioritere skolen i sine budsjetter.",
+              "type":"p"
+            },
+            {
+              "text":"For å sikre en gratis skole for alle må skolen være en prioritet i Stortinget og skoleeiernes budsjetter. Det er viktig at skolesystemet som helhet har som mål å realisere lik rett til utdanning, slik at alle elever kan stille likt i opplæringssystemet. Intensjonen er å oppnå like muligheter for alle elever, uavhengig av økonomisk bakgrunn, og dette må være et overordnet mål for hele utdanningssystemet.",
+              "type":"p"
+            }
+          ],
       "children": [
         {
           "id": "A.1",
           "title": "A.1 Rammer i opplæringen",
           "level": 2,
+          
           "children": [
             {
               "id": "A.1.1",
@@ -502,16 +521,6 @@
               ]
             }
           ]
-        }
-      ],
-      "content": [
-        {
-          "type": "p",
-          "text": "Politisk måldokument blir til på Elevtinget, Elevorganisasjonens landsmøte, på elevenes premisser. Politisk måldokument består av Elevorganisasjonens meninger. Politisk måldokument skal sees i lys av prinsipprogrammet."
-        },
-        {
-          "type": "p",
-          "text": "Skolen skal være et inkluderende sted hvor alle uavhengig av bakgrunn, økonomi og ferdigheter har like muligheter til å nå sine mål. For at alle elever skal få mulighet til å nå målene sine, må opplæringen legge til rette for det. Alle elever skal ha lik tilgang til videregående opplæring, og for å oppnå dette må opplæringen tilpasses slik at den er tilgjengelig for alle. Det er utfordrende å tilby en opplæring som imøtekommer ulike sosioøkonomiske bakgrunner, hvor noen elever kommer fra hjem med omfattende bokhyller, mens andre lærer praktiske ferdigheter fra tidlig alder. Uansett bør ikke foreldrenes ressurser påvirke elevers utbytte av opplæringen. Elevenes sosioøkonomiske bakgrunn og forhold utenfor skolen skal ikke være en hindring for valg av utdanningsløp eller for suksess i skolen. Noen elever har foresatte som har god tid til å engasjere seg i og hjelpe til med skolearbeidet, mens andre har foresatte med dårlig råd, som ikke har tid eller forutsetninger til å bistå elevene i deres utdanningsløp. Dette skal ikke gi utslag på elevenes mulighet til å lykkes i fagene. Skolesystemet må jobbe mot å realisere lik rett til utdanning, hvor elevers ønsker og behov styrer valg av skole og utdanningsløp, uavhengig av økonomiske ressurser. Lik rett til utdanning er en sentral verdi i det norske utdanningssystemet, og forå sikre en skole for alle må politiske beslutningstakere prioritere skolen i sine budsjetter. For å sikre en gratis skole for alle må skolen være en prioritet i Stortinget og skoleeiernes budsjetter. Det er viktig at skolesystemet som helhet har som mål å realisere lik rett til utdanning, slik at alle elever kan stille likt i opplæringssystemet. Intensjonen er å oppnå like muligheter for alle elever, uavhengig av økonomisk bakgrunn, og dette må være et overordnet mål for hele utdanningssystemet."
         }
       ]
     },

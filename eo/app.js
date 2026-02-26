@@ -214,10 +214,14 @@ function renderNode(node, parentKey, idxInParent){
   d.id = domId;
   DOM_ID_TO_DETAILS.set(domId, d);
 
+    // 1) Render content hvis det finnes (uansett nivå)
+    if (node.content && node.content.length){
+        inner.appendChild(renderContent(node));
+    }
+  
+  // 2) Render children etterpå hvis det finnes
   if (node.children && node.children.length){
     node.children.forEach((ch, i) => inner.appendChild(renderNode(ch, key, i)));
-  } else {
-    inner.appendChild(renderContent(node));
   }
 
   d.appendChild(inner);
